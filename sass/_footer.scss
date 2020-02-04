@@ -1,0 +1,58 @@
+.footer{
+    background-color: #f6f5f5;
+    padding: 200px 0 70px 0;
+    margin-top: 200px;
+    position: relative;
+
+    .contact-us{
+        width: 80%;
+        background-color: $blue;
+        border-radius: 110px 0 0 0;
+        height: 240px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__text{
+            color: #fff;
+            font-weight: 700;
+            font-size: 32px;
+            margin-right: 40px;
+        }
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__column{
+        width: 25%;
+        svg{
+            width: 100px;
+        }
+
+        nav{
+            margin-left: 40px;
+            ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                li{
+                    margin: 10px 0;
+                    &.title{
+                        color: $blue;
+                    }
+                    a{
+                        color: $gray;
+                    }
+                }
+            }
+        }
+    }
+}

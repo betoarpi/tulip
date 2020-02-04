@@ -1,0 +1,54 @@
+.header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__logo{
+        svg{
+            width: 110px;
+        }
+    }
+    &__nav{
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                margin-left: 50px;
+                a{
+                    font-size: 17px;
+                    font-weight: 600;
+                    color: $blue;
+                    display: block;
+                    position: relative;
+                    &:hover::after{
+                        content: "";
+                        position: absolute;
+                        background-color: $red;
+                        height: 2px;
+                        width: calc(100% + 2px);
+                        bottom: -10px;
+                        left: 0;
+                    }
+                    &.btn{
+                        color: $red;
+                        box-shadow: rgba(61, 51, 51, 0.25) 0px 5px 20px 0px;
+                        font-size: 16px;
+                        border-radius: 28px;
+                        padding: 13px 27px;
+                        transition: linear 0.2s;
+                        &:hover{
+                            background-color: $red;
+                            color: #fff;
+                        }
+                        &:hover::after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

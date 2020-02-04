@@ -1,0 +1,101 @@
+/*========== INIT ==========*/
+html, body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}
+p{
+	margin: 0;
+	font-weight: normal;
+}
+ul, figure{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+input, textarea, button, select{
+	background-color: transparent;
+	border-radius: 0;
+	border: solid 1px #cbcbcb;
+	font-weight: 600;
+}
+input::placeholder{
+	color: #cbcbcb;
+	font-weight: 300;
+}
+input:focus, textarea:focus, button:focus, select:focus{
+	outline: none;
+}
+a{
+	outline: none;
+	text-decoration: none;
+}
+
+
+
+body{
+	background-color: #fff;
+	min-height: 100vh;
+	position: relative;
+}
+
+
+/* CONTAINER */
+.container{
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 45px;
+	//background-color: rgba(181, 50, 0, 0.16);
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.main{
+    
+}
+
+h1{
+    font-size: 43px;
+    color: $blue;
+    font-weight: 800;
+}
+h3{
+    font-size: 22px;
+    color: rgb(213, 207, 206);
+    font-weight: 900;
+}
+p{
+    color: $gray;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: .36px;
+    line-height: 27px;
+}
+
+
+
+@media (max-width: 1023px) {
+
+}
+
+
+@media (max-width: 767px) {
+
+	
+}
