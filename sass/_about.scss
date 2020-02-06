@@ -1,0 +1,343 @@
+.about{
+    section{
+        padding: 100px 0;
+    }
+
+    .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__description{
+            width: 100%;
+            margin-right: 40px;
+            padding: 20px;
+            &-title{
+                color: $blue;
+                font-weight: 800;
+                font-size: 43px;
+                letter-spacing: .36px;
+                line-height: 49px;
+            }
+            &-text{
+                width: 100%;
+                max-width: 500px;
+                margin: 20px 0;
+            }
+        }
+        &__img{
+            display: block;
+            width: 100%;
+            max-width: 360px;
+        }
+    }
+
+    .leaders{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__description{
+            width: calc(50% - 40px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h2{
+                margin-bottom: 20px;
+            }
+            &-title{
+                font-size: 36px;
+                font-weight: 800;
+                color: $blue;
+            }
+            &-text{
+                margin: 30px 0;
+            }
+            &-btn{
+                display: block;
+                width: 182px;
+                text-align: center;
+            }
+        }
+        &__cards{
+            width: calc(50% - 40px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-items: flex-start;
+            //width: calc(520px + 2rem);
+       
+            &-item{
+                display: flex;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                justify-content: center;
+                position: relative;
+                width: 250px;
+                height: 250px;
+                color: rgb(21, 16, 67);
+                box-shadow: rgba(101, 101, 101, 0.1) -10px 55px 40px 0px;
+                padding: 1.5rem;
+                background: white;
+                border-radius: 12px;
+
+                &:first-child {
+                    margin-bottom: calc(-125px + 1rem);
+                }
+                &:nth-child(2) {
+                    align-self: flex-end;
+                }
+                &:last-child {
+                    margin-top: calc(-125px + 1rem);
+                    color: white;
+                    background: rgb(21, 16, 67);
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 180px;
+                    height: 180px;
+                    z-index: -1;
+                    background: rgba(213, 207, 206, 0.25);
+                }
+                &:first-child::before {
+                    top: -2rem;
+                    left: -2rem;
+                    border-top-left-radius: 25px;
+                }
+                &:nth-child(2)::before {
+                    bottom: -2rem;
+                    left: -2rem;
+                    border-top-left-radius: 25px;
+                    border-bottom-right-radius: 25px;
+                }
+
+                &-icon {
+                    position: absolute;
+                    top: 1.5rem;
+                    width: 24px;
+                }
+                &-content {
+                    margin-top: 50px;
+                    h4{
+                        font-weight: 700;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 21px;
+                        letter-spacing: normal;
+                        margin-top: 15px;
+                        color: $blue;
+                        &.white{
+                           color: #fff; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .company{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__img{
+            width: calc(50% - 40px);
+            max-width: 526px;
+            display: block;
+            width: 100%;
+        }
+        &__description{
+            width: calc(50% - 40px);
+            &-title{
+                color: $blue;
+                font-weight: 800;
+                font-size: 36px;
+                letter-spacing: .36px;
+                line-height: 49px;
+                margin: 20px 0;
+            }
+            &-text{
+                width: 100%;
+                max-width: 500px;
+                
+            }
+        }
+    }
+
+    .culture{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__description{
+            width: calc(50% - 40px);
+            h2{
+                margin-bottom: 20px;
+            }
+            &-title{
+                color: $blue;
+                font-weight: 800;
+                font-size: 36px;
+                letter-spacing: .36px;
+                line-height: 49px;
+            }
+            &-text{
+                width: 100%;
+                max-width: 500px;
+                margin: 20px 0;
+            }
+        }
+        &__img{
+            width: calc(50% - 40px);
+            max-width: 526px;
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .team{
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 100%;
+        
+        &__content {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 0px;
+        }
+        &__boxes {
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            z-index: 1;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 850px;
+            margin-left: -150px;
+
+            &-item {
+                position: relative;
+                width: 260px;
+                height: 260px;
+                color: rgb(21, 16, 67);
+                box-shadow: rgba(101, 101, 101, 0.1) -10px 55px 40px 0px;
+                padding: 1rem;
+                background: white;
+                border-radius: 16px;
+
+                &:first-child {
+                    margin-top: 6rem;
+                    margin-right: 2rem;
+                }
+                &:nth-child(3) {
+                    margin-top: 13.5rem;
+                    margin-left: 2rem;
+                    color: white;
+                    background: rgb(21, 16, 67);
+                }
+                &:last-child {
+                    margin-top: -11rem;
+                }
+                &-img{
+                    display: block;
+                    width: 100%;
+                }
+                &-name{
+                    font-size: 16px;
+                    color: $blue;
+                    font-weight: 700;
+                    margin-top: 10px;
+                    &.white{
+                        color: #fff;
+                    }
+                }
+                &-job{
+                    
+                }
+            }
+        }
+            
+            
+        .team__description {
+            position: absolute;
+            right: -260px;
+            top: -60px;
+            width: 100%;
+            max-width: 490px;
+            &-content {
+                position: relative;
+                width: auto;
+            }
+            &-title{
+                font-size: 36px;
+                color: $blue;
+                font-weight: 800;
+                margin: 20px 0;
+            }
+            &-subtitle{
+                font-size: 22px;
+                color: $blue;
+                font-weight: 500;
+                margin: 10px 0;
+            }
+            &-text{
+                font-size: 18px;
+                color: $gray;
+                font-weight: 500;
+                letter-spacing: .37px;
+                line-height: 27px;
+            }
+        }
+        
+
+
+    }
+
+    .partners{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        &__description{
+            width: calc(60% - 40px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h2{
+                margin-bottom: 20px;
+            }
+            &-title{
+                font-size: 32px;
+                font-weight: 800;
+                color: $blue;
+            }
+            &-image{
+                display: block;
+                width: 100%;
+                max-width: 620px;
+                margin: 50px 0;
+            }
+            &-text{
+                font-size: 22px;
+                color: $blue;
+                font-weight: 500;
+                line-height: 34px;
+                letter-spacing: .36px;
+                max-width: 440px;
+            }
+            .link{
+                margin-top: 36px;
+                display: block;
+            }
+        }
+        &__image{
+            width: calc(40% - 40px);
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+}
