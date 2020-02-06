@@ -700,10 +700,14 @@ p {
 .home .about__cards-item-content p.white {
   color: #fff;
 }
+.home .carousel {
+  background-color: red;
+}
 .home .carousel__item {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  background-color: green;
 }
 .home .carousel__item .left {
   width: calc(40% - 20px);

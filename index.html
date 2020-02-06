@@ -7,6 +7,8 @@
     <title>Tulip</title>
 
     <script src="https://kit.fontawesome.com/fd7543ab2c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -24,6 +26,7 @@
             </ul>
         </nav>
     </header>
+
     <main class="container home">
         
         <section class="request-demo">
@@ -79,7 +82,25 @@
             </div>
         </section>
 
-        <section class="carousel">
+        <section class="carousel" id="carousel">
+            <div class="carousel__item">
+                <div class="left">
+                    <img src="./images/home/carousel/slide4_1.webp">
+                    <img src="./images/home/carousel/slide4_2.webp">
+                </div>
+                <div class="right">
+                    <div class="quote">
+                        <div class="icon"></div>
+                        <div class="text">
+                            You have doubled our ROI expectations.
+                        </div>
+                        <div class="author">
+                            VP Retail Operations Luxury Jewelry Retailer
+                        </div>
+                    </div>
+                    <img src="./images/home/carousel/slide4_3.webp">
+                </div>
+            </div>
             <div class="carousel__item">
                 <div class="left">
                     <img src="./images/home/carousel/slide4_1.webp">
@@ -229,6 +250,7 @@
         </section>
 
     </main>
+
     <footer class="footer">
         <div class="contact-us">
             <div class="contact-us__text">
@@ -278,6 +300,15 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function() {
+            $('#carousel').slick();
+        });
+    </script>
 
 </body>
 </html>
