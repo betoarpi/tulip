@@ -1106,7 +1106,7 @@ p {
 .about .info__description-text {
   width: 100%;
   max-width: 500px;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 .about .info__img {
   display: block;
@@ -1296,7 +1296,6 @@ p {
   width: 260px;
   height: 260px;
   color: #151043;
-  box-shadow: rgba(101, 101, 101, 0.1) -10px 55px 40px 0px;
   padding: 1rem;
   background: white;
   border-radius: 16px;
@@ -1308,8 +1307,6 @@ p {
 .about .team__boxes-item:nth-child(3) {
   margin-top: 13.5rem;
   margin-left: 2rem;
-  color: white;
-  background: #151043;
 }
 .about .team__boxes-item:last-child {
   margin-top: -11rem;
@@ -1400,6 +1397,73 @@ p {
 .about .partners__image img {
   display: block;
   width: 100%;
+}
+.about .investors__title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #151043;
+  margin: 40px 0;
+}
+.about .investors__companies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0;
+}
+.about .investors__companies-item {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 20px;
+}
+.about .investors__companies-item img {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.partners section {
+  padding: 100px 0;
+}
+.partners .request-demo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.partners .request-demo__image {
+  display: block;
+  border-radius: 100px 0 100px 0;
+  width: calc(50% - 20px);
+}
+.partners .request-demo__description {
+  width: calc(50% - 20px);
+  padding: 0 40px;
+}
+.partners .request-demo__description p {
+  margin: 40px 0;
+}
+.partners .logos__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 60px 0;
+  max-width: 1000px;
+}
+.partners .logos__content-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 40px 40px;
+}
+.partners .logos__content-item img {
+  display: block;
+  width: 150px;
+}
+.partners .logos__content-item .link {
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */

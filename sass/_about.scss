@@ -21,7 +21,7 @@
             &-text{
                 width: 100%;
                 max-width: 500px;
-                margin: 20px 0;
+                margin: 30px 0;
             }
         }
         &__img{
@@ -222,7 +222,6 @@
                 width: 260px;
                 height: 260px;
                 color: rgb(21, 16, 67);
-                box-shadow: rgba(101, 101, 101, 0.1) -10px 55px 40px 0px;
                 padding: 1rem;
                 background: white;
                 border-radius: 16px;
@@ -234,8 +233,6 @@
                 &:nth-child(3) {
                     margin-top: 13.5rem;
                     margin-left: 2rem;
-                    color: white;
-                    background: rgb(21, 16, 67);
                 }
                 &:last-child {
                     margin-top: -11rem;
@@ -337,6 +334,34 @@
                 display: block;
                 width: 100%;
             }
+        }
+    }
+
+    .investors{
+        &__title{
+            font-size: 32px;
+            font-weight: 800;
+            color: $blue;
+            margin: 40px 0;
+        }
+        &__companies{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 80px 0;
+            &-item{
+                min-height: 250px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+                margin: 20px;
+                img{
+                    display: block;
+                    margin-bottom: 40px;
+                }
+            }
+            
         }
     }
 
