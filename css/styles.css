@@ -1466,6 +1466,304 @@ p {
   margin-top: 40px;
 }
 
+.clienteling section {
+  padding: 100px 0;
+}
+.clienteling .info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.clienteling .info__description {
+  padding: 0 40px;
+}
+.clienteling .info__description h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+.clienteling .info__description-title {
+  font-size: 43px;
+  font-weight: 800;
+  color: #151043;
+}
+.clienteling .info__description-text {
+  margin: 20px 0;
+}
+.clienteling .info__description-btn {
+  display: inline-block;
+}
+.clienteling .overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clienteling .overview__description {
+  width: calc(50% - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.clienteling .overview__description h2 {
+  margin-bottom: 20px;
+}
+.clienteling .overview__description-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #151043;
+}
+.clienteling .overview__description-text {
+  margin: 30px 0;
+}
+.clienteling .overview__description-btn {
+  display: block;
+  width: 182px;
+  text-align: center;
+}
+.clienteling .overview__cards {
+  width: calc(50% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+}
+.clienteling .overview__cards-item {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  color: #151043;
+  box-shadow: rgba(101, 101, 101, 0.1) -10px 55px 40px 0px;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+}
+.clienteling .overview__cards-item:first-child {
+  margin-bottom: calc(-125px + 1rem);
+}
+.clienteling .overview__cards-item:nth-child(2) {
+  align-self: flex-end;
+}
+.clienteling .overview__cards-item:last-child {
+  margin-top: calc(-125px + 1rem);
+  color: white;
+  background: #151043;
+}
+.clienteling .overview__cards-item::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  z-index: -1;
+  background: rgba(213, 207, 206, 0.25);
+}
+.clienteling .overview__cards-item:first-child::before {
+  top: -2rem;
+  left: -2rem;
+  border-top-left-radius: 25px;
+}
+.clienteling .overview__cards-item:nth-child(2)::before {
+  bottom: -2rem;
+  left: -2rem;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.clienteling .overview__cards-item-icon {
+  position: absolute;
+  top: 1.5rem;
+  width: 24px;
+}
+.clienteling .overview__cards-item-icon:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -6px;
+  width: 22px;
+  height: 22px;
+  opacity: 0.25;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: #f54862;
+}
+.clienteling .overview__cards-item-content {
+  margin-top: 50px;
+}
+.clienteling .overview__cards-item-content h4 {
+  font-weight: 700;
+}
+.clienteling .overview__cards-item-content .value {
+  font-size: 36px;
+  color: #151043;
+  font-weight: 900;
+  margin: 10px 0;
+}
+.clienteling .overview__cards-item-content .value.white {
+  color: #fff;
+}
+.clienteling .overview__cards-item-content p {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: normal;
+  margin-top: 15px;
+  color: #151043;
+}
+.clienteling .overview__cards-item-content p.white {
+  color: #fff;
+}
+.clienteling .features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clienteling .features__image {
+  width: 50%;
+}
+.clienteling .features__image img {
+  display: block;
+  width: 100%;
+}
+.clienteling .features__description {
+  width: 50%;
+  padding: 0 60px;
+}
+.clienteling .features__description-title {
+  margin: 20px 0;
+  color: #151043;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 41px;
+  letter-spacing: 0.36px;
+}
+.clienteling .features__description-item {
+  margin: 40px 0;
+}
+.clienteling .features__description-item .name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 23px;
+  color: #151043;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.clienteling .features__description-item .name .icon {
+  width: 26px;
+  margin-right: 20px;
+}
+.clienteling .features__description-item ul {
+  padding-left: 40px;
+}
+.clienteling .features__description-item ul li {
+  list-style: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  color: #747489;
+  line-height: 24px;
+  letter-spacing: 0.36px;
+  margin: 10px 0;
+}
+.clienteling .quote-content {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  min-height: 600px;
+}
+.clienteling .quote-content .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.clienteling .quote-content .left img {
+  display: block;
+}
+.clienteling .quote-content .left img:first-child {
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: 40px;
+}
+.clienteling .quote-content .left img:last-child {
+  width: 100%;
+  max-width: 240px;
+}
+.clienteling .quote-content .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 700px;
+  padding-left: 40px;
+}
+.clienteling .quote-content .right .quote .icon {
+  width: 28px;
+  margin-left: 40px;
+}
+.clienteling .quote-content .right .quote .text {
+  font-size: 27px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0.36px;
+  line-height: 37px;
+  color: #151043;
+  margin: 20px 0;
+  border-left: solid 1px #cccccc;
+  padding-left: 40px;
+}
+.clienteling .quote-content .right .quote .author {
+  color: #151043;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 40px;
+}
+.clienteling .quote-content .right img {
+  width: 100%;
+  display: block;
+  max-width: 600px;
+}
+.clienteling .value {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clienteling .value__image {
+  display: flex;
+  width: 50%;
+}
+.clienteling .value__image img {
+  display: block;
+  width: 90%;
+}
+.clienteling .value__description {
+  width: 50%;
+  padding: 0 40px;
+}
+.clienteling .value__description-title {
+  color: #151043;
+  font-weight: 800;
+  font-size: 36px;
+  margin: 20px 0;
+}
+.clienteling .value__description ul {
+  padding-left: 20px;
+}
+.clienteling .value__description ul li {
+  list-style: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  color: #747489;
+  line-height: 24px;
+  letter-spacing: 0.36px;
+  margin: 10px 0;
+}
+
 .contact section {
   padding: 80px 0;
 }
