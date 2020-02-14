@@ -314,4 +314,48 @@
         }
     }
 
+    .documents{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        .column{
+            width: 50%;
+            padding: 40px;
+        }
+        &__title{
+            font-size: 36px;
+            font-weight: 800;
+            letter-spacing: .36px;
+            color: $blue;
+            line-height: 41px;
+            margin: 20px 0;
+        }
+        &__item{
+            margin: 100px 0;
+            &-title_red{
+                color: $red;
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 20px;
+                svg{
+                    width: 24px;
+                }
+            }
+            &-image{
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            &-title{
+                font-size: 22px;
+                font-weight: 500;
+                letter-spacing: .36px;
+                color: $blue;
+            }
+            p{
+                margin: 20px 0;
+            }
+        }
+    }
+
 }

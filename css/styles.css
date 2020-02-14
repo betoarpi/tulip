@@ -1763,6 +1763,49 @@ p {
   letter-spacing: 0.36px;
   margin: 10px 0;
 }
+.clienteling .documents {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.clienteling .documents .column {
+  width: 50%;
+  padding: 40px;
+}
+.clienteling .documents__title {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 0.36px;
+  color: #151043;
+  line-height: 41px;
+  margin: 20px 0;
+}
+.clienteling .documents__item {
+  margin: 100px 0;
+}
+.clienteling .documents__item-title_red {
+  color: #f54862;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.clienteling .documents__item-title_red svg {
+  width: 24px;
+}
+.clienteling .documents__item-image {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.clienteling .documents__item-title {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.36px;
+  color: #151043;
+}
+.clienteling .documents__item p {
+  margin: 20px 0;
+}
 
 .contact section {
   padding: 80px 0;
