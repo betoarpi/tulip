@@ -50,5 +50,21 @@
             }
         }
     }
+    &__btnMenu{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 1023px) {
+
+    .header{
+        &__nav{
+            display: none;
+        }
+        &__btnMenu{
+            display: block;
+        }
+    }
 
 }

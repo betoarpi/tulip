@@ -67,8 +67,8 @@ body{
 	min-height: 100vh;
 }
 
-.main{
-    
+main{
+    overflow: hidden;
 }
 
 h1{
@@ -92,11 +92,7 @@ p{
 
 
 @media (max-width: 1023px) {
-
-}
-
-
-@media (max-width: 767px) {
-
-	
+	.container {
+		padding: 0 20px;
+	}
 }

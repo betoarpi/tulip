@@ -257,7 +257,7 @@
         }
             
             
-        .team__description {
+        &__description {
             position: absolute;
             right: -260px;
             top: -60px;
@@ -287,9 +287,6 @@
                 line-height: 27px;
             }
         }
-        
-
-
     }
 
     .partners{
@@ -365,4 +362,226 @@
         }
     }
 
+}
+
+@media (max-width: 1279px) {
+    .about{
+        
+        .leaders{
+            &__cards{
+                &-item{
+                    width: 200px;
+                    height: 250px;
+                    padding: 15px;
+                    &-content {
+                        margin-top: 30px;//cambiado
+                    }
+                }
+            }
+        }
+
+        .company{
+            &__img{
+                width: calc(50% - 20px);
+            }
+            &__description{
+                width: calc(50% - 20px);
+            }
+        }
+
+        .culture{
+            &__img{
+                width: calc(50% - 20px);
+            }
+            &__description{
+                width: calc(50% - 20px);
+            }
+        }
+
+        .team{
+            &__boxes {
+                &-item {
+                    width: 240px;
+                    &:nth-child(3) {
+                        margin-top: 18.5rem;
+                    }
+                    &:last-child {
+                        margin-top: -16rem;
+                    }
+                    &:first-child::before {
+                        top: -1rem;
+                        left: -1rem;
+                    }
+                    &:nth-child(2)::before {
+                        top: -1rem;
+                        right: -1rem;
+                    }
+                    &:last-child::before {
+                        bottom: -1rem;
+                        left: -1rem;
+                    }
+                    &-value{
+                        font-size: 30px;
+                    }
+                    &-info{
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+            &__description {
+                right: -140px;
+                max-width: 400px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1023px) {
+    .about{
+
+        section{
+            padding: 50px 0;
+        }
+        
+        .info{
+            flex-direction: column;
+            &__description{
+                width: 100%;
+                margin-bottom: 20px;
+                &-text{
+                    max-width: 100%;
+                }
+            }
+            &__img{
+                width: 100%;
+            }
+        }
+
+        .leaders{
+            flex-direction: column;
+            &__description{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            &__cards{
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                &-item{
+                    width: 250px;
+                    margin: 40px 0 !important;
+                    align-self: initial !important;
+                    &:before{
+                        top: -1rem !important;
+                        left: -1rem !important;
+                    }
+                }
+            }
+        }
+
+        .company{
+            flex-direction: column;
+            &__img{
+                width: 100%;
+                order: 2;
+            }
+            &__description{
+                width: 100%;
+                order: 1;
+                margin-bottom: 20px;
+                &-text{
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .culture{
+            flex-direction: column;
+            &__img{
+                width: 100%;
+                order: 2;
+            }
+            &__description{
+                width: 100%;
+                order: 1;
+                margin-bottom: 20px;
+                &-text{
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .team{
+            &__content{
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                flex-direction: column;
+                width: 100%;
+            }
+            &__boxes {
+                margin: 0;
+                width: 100%;
+                order: 2;
+                &-item {
+                    width: 240px;
+                    margin: 20px !important;
+                    &:first-child::before {
+                        top: -1rem;
+                        left: -1rem;
+                    }
+                    &:nth-child(2)::before {
+                        top: -1rem;
+                        right: -1rem;
+                    }
+                    &:last-child::before {
+                        bottom: -1rem;
+                        left: -1rem;
+                    }
+                    &-value{
+                        font-size: 30px;
+                    }
+                    &-info{
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }  
+            &__description {
+                position: relative;
+                top: initial;
+                right: initial;
+                left: initial;
+                order: 1;
+                width: 100%;
+                max-width: 100%;
+                margin-bottom: 20px;
+            } 
+        }
+
+        .partners {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            &__image{
+                order: 2;
+                width: 70%;
+            }
+            &__description{
+                width: 100%;
+                order: 1;
+                margin-bottom: 40px;
+            }
+        }
+
+        .investors{
+            &__companies{
+                flex-wrap: wrap;
+            }
+        }
+
+    }
 }
