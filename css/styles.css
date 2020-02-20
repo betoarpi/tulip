@@ -2948,4 +2948,72 @@ p, article ul, article ol, article blockquote {
   top: 0;
 }
 
+.post__content {
+  display: flex;
+  flex-direction: column;
+}
+.post__hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.post__hero__image {
+  border-radius: 0 2.75rem;
+  display: flex;
+  height: 380px;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.post__hero__image img {
+  object-fit: cover;
+}
+.post__hero__description {
+  padding: 0 40px;
+}
+.post__hero__description h3 {
+  color: #f54862;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.5rem;
+  text-transform: uppercase;
+}
+.post__hero__description-title {
+  font-size: 2.6875rem;
+  font-weight: 800;
+  color: #151043;
+  margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .post__hero {
+    flex-direction: column;
+  }
+  .post__hero__image, .post__hero__description {
+    width: 100%;
+  }
+}
+.post__share {
+  align-self: flex-end;
+  border-radius: 2.75rem 0;
+  color: #f54862;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.post__share ul {
+  display: flex;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.post__share ul li {
+  border-right: 1px solid white;
+  padding: 0 1rem;
+}
+.post__share ul li:last-child {
+  border-right: none;
+}
+.post__share ul li a {
+  color: #747489;
+}
+
 /*# sourceMappingURL=styles.css.map */
