@@ -3109,6 +3109,8 @@ p, article ul, article ol, article blockquote {
   font-weight: 700;
 }
 .post__share ul li {
+  align-items: center;
+  display: flex;
   border-right: 1px solid white;
   padding: 0 1rem;
 }
@@ -3116,7 +3118,26 @@ p, article ul, article ol, article blockquote {
   border-right: none;
 }
 .post__share ul li a {
+  align-items: center;
   color: #747489;
+}
+.post__share ul li a svg {
+  align-self: center;
+  display: flex;
+  width: 2rem;
+}
+@media (max-width: 767px) {
+  .post__share {
+    align-self: flex-start;
+    margin-bottom: 0;
+  }
+  .post__share ul {
+    flex-wrap: wrap;
+  }
+  .post__share ul li:first-child {
+    flex: 0 0 100%;
+    margin-bottom: 1rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

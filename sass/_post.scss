@@ -56,13 +56,34 @@
       font-size: 1.125rem;
       font-weight: 700;
       li {
+        align-items: center;
+        display: flex;
         border-right: 1px solid white;
         padding:0 1rem;
         &:last-child {
           border-right: none;
         }
         a {
+          align-items: center;
           color: $gray;
+          svg {
+            align-self: center;
+            display: flex;
+            width: 2rem;
+          }
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      align-self: flex-start;
+      margin-bottom: 0;
+      ul {
+        flex-wrap: wrap;
+        li {
+          &:first-child {
+            flex: 0 0 100%;
+            margin-bottom: 1rem;
+          }
         }
       }
     }
