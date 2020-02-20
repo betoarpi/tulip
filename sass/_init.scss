@@ -134,6 +134,15 @@ article {
 			transform: translateY(-50%);
 		}
 	}
+
+	.btn--blue {
+		text-decoration: none;
+		&:last-child {
+			display: block;
+			margin: 0 auto;
+			width: max-content;
+		}
+	}
 }
 
 
