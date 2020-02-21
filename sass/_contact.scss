@@ -3,96 +3,6 @@
         padding: 80px 0;
     }
 
-    .form{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &__content{
-            margin: 40px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-            box-shadow: rgba(101, 101, 101, 0.1) -5px 25px 100px;
-            background-color: white;
-            padding: 30px;
-            &-title{
-                font-size: 36px;
-                color: $blue;
-                line-height: 41px;
-                letter-spacing: .36px;
-                font-weight: 800;
-            }
-            &-text{
-                margin: 20px 0;
-            }   
-            form{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                max-width: 600px;
-                margin: 20px 0;
-                .form-group{
-                    width: calc(50% - 20px);
-                    margin: 10px;
-                    &.full{
-                        width: 100%;
-                    }
-                    label{
-                        color: $gray;
-                    }
-                    input,
-                    textarea{
-                        margin-top: 8px;
-                        font-size: 15px;
-                        letter-spacing: 0.3px;
-                        color: rgb(116, 116, 137);
-                        background-color: rgb(248, 248, 248);
-                        width: 100%;
-                        -webkit-appearance: none;
-                        padding: 11px 22px;
-                        border-radius: 4px;
-                        border-color: rgb(178, 183, 203);
-                        outline: none;
-                        border-style: solid;
-                        border-width: 1px;
-                        &::placeholder{
-                            color: #cbcbcb;
-                            font-style: italic;
-                        }
-                    }
-                    textarea{
-                        min-height: 100px;
-                    }
-                }
-                .btn--blue{
-                    float: right;
-                    margin-left: auto;
-                    margin-top: 20px;
-                }
-            }
-        }
-        &__see{
-            width: 334px;
-            margin: 40px;
-            &-title{
-                font-size: 36px;
-                color: $blue;
-                line-height: 41px;
-                letter-spacing: .36px;
-                font-weight: 800;
-            }
-            &-text{
-                margin: 20px 0;
-            }  
-            &-image{
-                display: block;
-                width: 100%;
-            }  
-        }
-    }
-
     .offices{
         position: relative;
         display: flex;
@@ -243,6 +153,96 @@
 
 }
 
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content{
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        box-shadow: rgba(101, 101, 101, 0.1) -5px 25px 100px;
+        background-color: white;
+        padding: 30px;
+        &-title{
+            font-size: 36px;
+            color: $blue;
+            line-height: 41px;
+            letter-spacing: .36px;
+            font-weight: 800;
+        }
+        &-text{
+            margin: 20px 0;
+        }   
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            max-width: 600px;
+            margin: 20px 0;
+            .form-group{
+                width: calc(50% - 20px);
+                margin: 10px;
+                &.full{
+                    width: 100%;
+                }
+                label{
+                    color: $gray;
+                }
+                input,
+                textarea{
+                    margin-top: 8px;
+                    font-size: 15px;
+                    letter-spacing: 0.3px;
+                    color: rgb(116, 116, 137);
+                    background-color: rgb(248, 248, 248);
+                    width: 100%;
+                    -webkit-appearance: none;
+                    padding: 11px 22px;
+                    border-radius: 4px;
+                    border-color: rgb(178, 183, 203);
+                    outline: none;
+                    border-style: solid;
+                    border-width: 1px;
+                    &::placeholder{
+                        color: #cbcbcb;
+                        font-style: italic;
+                    }
+                }
+                textarea{
+                    min-height: 100px;
+                }
+            }
+            .btn--blue{
+                float: right;
+                margin-left: auto;
+                margin-top: 20px;
+            }
+        }
+    }
+    &__see{
+        width: 334px;
+        margin: 40px;
+        &-title{
+            font-size: 36px;
+            color: $blue;
+            line-height: 41px;
+            letter-spacing: .36px;
+            font-weight: 800;
+        }
+        &-text{
+            margin: 20px 0;
+        }  
+        &-image{
+            display: block;
+            width: 100%;
+        }  
+    }
+}
+
 @media (max-width: 1279px) {
     .contact{
         .offices{
@@ -288,21 +288,6 @@
     .contact{
         section{
             padding: 50px 0;
-        }
-
-        .form{
-            flex-direction: column;
-            &__content{
-                order: 2;
-            }
-            &__see{
-                order: 1;
-                width: 100%;
-                img{
-                    width: 80%;
-                    margin: 0 auto;
-                }
-            }
         }
         .offices{
             &__content{
@@ -358,29 +343,41 @@
             } 
         }
     }
-}
 
-@media (max-width: 767px) {
-    .contact{
-        .form{
-            &__content{
-                padding: 30px;
-                margin: 0;
-                form{
-                    .form-group{
-                        width: 100%;
-                    }
-                }
-            }
-            &__see{
-                order: 1;
-                width: 100%;
-                img{
-                    width: 80%;
-                    margin: 0 auto;
-                }
+    .form{
+        flex-direction: column;
+        &__content{
+            order: 2;
+        }
+        &__see{
+            order: 1;
+            width: 100%;
+            img{
+                width: 80%;
+                margin: 0 auto;
             }
         }
     }
+}
 
+@media (max-width: 767px) {
+    .form{
+        &__content{
+            padding: 30px;
+            margin: 0;
+            form{
+                .form-group{
+                    width: 100%;
+                }
+            }
+        }
+        &__see{
+            order: 1;
+            width: 100%;
+            img{
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
 }
