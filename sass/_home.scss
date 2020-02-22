@@ -1,4 +1,4 @@
-.home{
+.home, .Homepage {
     section{
         padding: 100px 0;
     }
@@ -17,109 +17,6 @@
             padding: 0 40px;
             p{
                 margin: 40px 0;
-            }
-        }
-    }
-
-    .about{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &__description{
-            width: calc(50% - 40px);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            h2{
-                margin-bottom: 20px;
-            }
-            &-title{
-                font-size: 32px;
-                font-weight: 800;
-                color: $blue;
-            }
-            &-text{
-                
-                margin: 30px 0;
-            }
-            .link{
-                display: block;
-            }
-        }
-        &__cards{
-            width: calc(50% - 40px);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            align-items: flex-start;
-            //width: calc(520px + 2rem);
-       
-            &-item{
-                display: flex;
-                flex-direction: column;
-                -webkit-box-pack: center;
-                justify-content: center;
-                position: relative;
-                width: 250px;
-                height: 250px;
-                color: rgb(21, 16, 67);
-                box-shadow: rgba(101, 101, 101, 0.1) -10px 55px 40px 0px;
-                padding: 1.5rem;
-                background: white;
-                border-radius: 12px;
-
-                &:first-child {
-                    margin-bottom: calc(-125px + 1rem);
-                }
-                &:nth-child(2) {
-                    align-self: flex-end;
-                }
-                &:last-child {
-                    margin-top: calc(-125px + 1rem);
-                    color: white;
-                    background: rgb(21, 16, 67);
-                }
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 180px;
-                    height: 180px;
-                    z-index: -1;
-                    background: rgba(213, 207, 206, 0.25);
-                }
-                &:first-child::before {
-                    top: -2rem;
-                    left: -2rem;
-                    border-top-left-radius: 25px;
-                }
-                &:nth-child(2)::before {
-                    bottom: -2rem;
-                    left: -2rem;
-                    border-top-left-radius: 25px;
-                    border-bottom-right-radius: 25px;
-                }
-
-                &-icon {
-                    position: absolute;
-                    top: 1.5rem;
-                    width: 24px;
-                }
-                &-content {
-                    margin-top: 50px;
-                    h4{
-                        font-weight: 700;
-                    }
-                    p{
-                        font-size: 14px;
-                        line-height: 21px;
-                        letter-spacing: normal;
-                        margin-top: 15px;
-                        color: $blue;
-                        &.white{
-                           color: #fff; 
-                        }
-                    }
-                }
             }
         }
     }
@@ -374,6 +271,24 @@
                     margin-left: 2rem;
                     color: white;
                     background: rgb(21, 16, 67);
+                    .roi__boxes-item-icon {
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 8px;
+                            right: -6px;
+                            width: 22px;
+                            height: 22px;
+                            opacity: 0.15;
+                            border-top-left-radius: 8px;
+                            border-bottom-right-radius: 8px;
+                            background: white;
+                        }
+                    }
+                    .roi__boxes-item-title,
+                    .roi__boxes-item-value {
+                        color: white;
+                    }
                 }
                 &:last-child {
                     margin-top: -11rem;
@@ -508,13 +423,13 @@
                 font-weight: 800;
                 color: $blue;
             }
-            &-image{
+            &-image, img {
                 display: block;
                 width: 100%;
                 max-width: 620px;
                 margin: 50px 0;
             }
-            &-text{
+            &-text, p {
                 font-size: 22px;
                 color: $blue;
                 font-weight: 500;
@@ -537,23 +452,112 @@
     }
 }
 
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__description{
+        width: calc(50% - 40px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h2{
+            margin-bottom: 20px;
+        }
+        &-title{
+            font-size: 32px;
+            font-weight: 800;
+            color: $blue;
+        }
+        &-text{
+            
+            margin: 30px 0;
+        }
+        .link{
+            display: block;
+        }
+    }
+    &__cards{
+        width: calc(50% - 40px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: flex-start;
+        //width: calc(520px + 2rem);
+   
+        &-item{
+            display: flex;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            justify-content: center;
+            position: relative;
+            width: 250px;
+            height: 250px;
+            color: rgb(21, 16, 67);
+            box-shadow: rgba(101, 101, 101, 0.1) -10px 55px 40px 0px;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 12px;
 
-@media (max-width: 1279px) {
-    .home{
+            &:first-child {
+                margin-bottom: calc(-125px + 1rem);
+            }
+            &:nth-child(2) {
+                align-self: flex-end;
+            }
+            &:last-child {
+                margin-top: calc(-125px + 1rem);
+                color: white;
+                background: rgb(21, 16, 67);
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 180px;
+                height: 180px;
+                z-index: -1;
+                background: rgba(213, 207, 206, 0.25);
+            }
+            &:first-child::before {
+                top: -2rem;
+                left: -2rem;
+                border-top-left-radius: 25px;
+            }
+            &:nth-child(2)::before {
+                bottom: -2rem;
+                left: -2rem;
+                border-top-left-radius: 25px;
+                border-bottom-right-radius: 25px;
+            }
 
-        .about{
-            &__cards{
-                &-item{
-                    width: 200px;
-                    height: 250px;
-                    padding: 15px;
-                    &-content {
-                        margin-top: 30px;//cambiado
+            &-icon {
+                position: absolute;
+                top: 1.5rem;
+                width: 24px;
+            }
+            &-content {
+                margin-top: 50px;
+                h4{
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: normal;
+                    margin-top: 15px;
+                    color: $blue;
+                    &.white{
+                       color: #fff; 
                     }
                 }
             }
         }
+    }
+}
 
+
+@media (max-width: 1279px) {
+    .home{
         .carousel{
             &__item{
                 .left{
@@ -603,6 +607,18 @@
         }
         
     }
+    .about{
+        &__cards{
+            &-item{
+                width: 200px;
+                height: 250px;
+                padding: 15px;
+                &-content {
+                    margin-top: 30px;//cambiado
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1023px) {
@@ -624,28 +640,6 @@
                 order: 1;
                 margin-bottom: 40px;
                 padding: 0 20px;
-            }
-        }
-
-        .about{
-            flex-direction: column;
-            &__description{
-                width: 100%;
-                margin-bottom: 20px;
-            }
-            &__cards{
-                width: 100%;
-                justify-content: center;
-                align-items: center;
-                &-item{
-                    width: 250px;
-                    margin: 40px 0 !important;
-                    align-self: initial !important;
-                    &:before{
-                        top: -1rem !important;
-                        left: -1rem !important;
-                    }
-                }
             }
         }
 
@@ -744,6 +738,28 @@
                 margin-bottom: 40px;
             }
         }
-    } 
+    }
+
+    .about{
+        flex-direction: column;
+        &__description{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        &__cards{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            &-item{
+                width: 250px;
+                margin: 40px 0 !important;
+                align-self: initial !important;
+                &:before{
+                    top: -1rem !important;
+                    left: -1rem !important;
+                }
+            }
+        }
+    }
 }
 
