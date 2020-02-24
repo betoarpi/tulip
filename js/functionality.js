@@ -1,9 +1,11 @@
+/* Modal Functionality */
 const openModal = () => {
   const modalElement = document.getElementById('modal')
   modalElement.classList.toggle('active')
   window.scrollTo(0, 0)
 }
 
+/* Tabs Functionality */
 const openSolution = (event) => {
   const activeSolution = document.querySelector('.solution__navigate-item.active')
   const targetImg = event.target.parentNode.dataset.target
@@ -32,3 +34,14 @@ const openSolution = (event) => {
       break;
   }
 }
+
+/* Mobile Menu */
+var btnMenu = document.getElementById('btnMenu');
+var btnCloseMenu = document.getElementById('btnCloseMenu');
+var menu = document.getElementById('menuMobile');
+btnMenu.addEventListener("click", function () {
+  menu.style.display = "flex";
+});
+btnCloseMenu.addEventListener("click", function () {
+  menu.style.display = "none";
+});

@@ -25,7 +25,7 @@ add_action( 'wp_enqueue_scripts', 'Tulip_enqueue_child_styles' );
 function js_scripts() {
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'slick', get_stylesheet_directory_uri() . '/js/slick.js', array( 'jquery' ),'',true );
-    wp_enqueue_script( 'functionality', get_stylesheet_directory_uri() . '/js/functionality.js', array(),'',true );
+    wp_enqueue_script( 'functionality', get_stylesheet_directory_uri() . '/js/functionality.js', array('jquery'),'',true );
     
 
 }

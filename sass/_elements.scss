@@ -38,10 +38,17 @@
     cursor: pointer;
     font-size: 18px;
     transition: linear 0.2s;
+    position: relative;
     &:hover{
         color: rgb(93, 88, 134);
     }
     i{
         margin-left: 5px;
+        font-size: 1.5em;
+        right: -1.25rem;
+        transform: translateY(5px);
+        &:before {
+            content: "→";
+        }
     }
 }

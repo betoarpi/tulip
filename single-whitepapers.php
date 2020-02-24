@@ -1,6 +1,6 @@
 <?php
 /*
- *  Post Type: Webinars
+ *  Post Type: Whitepapers
  */
 
 get_header();
@@ -21,7 +21,9 @@ get_header();
         }
 
         ?>
+
     </section>
+
 </main>
 
 <?php
