@@ -1,17 +1,6 @@
 .post {
   margin-bottom: -3rem;
   position: initial;
-  &::before {
-    background: #F6F5F5;
-    border-radius: 0 0 255px 0;
-    content: '';
-    height: 655px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 50%;
-    z-index: -1;
-  }
   &__content {
     display: flex;
     flex-direction: column;

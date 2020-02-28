@@ -14,16 +14,37 @@
         right: 0;
         transform: translateY(-50%);
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         &__text{
             color: #fff;
             font-weight: 700;
             font-size: 32px;
-            margin-right: 40px;
+            line-height: 44.1px;
         }
         .btn--white{
-            width: 152px;
+            flex: 0 0 152px;
+            text-align: center;
+        }
+        @media screen and (max-width: 1359px) {
+            &__text{
+                font-size: 26.25px;
+                line-height: 36.75px;
+            }
+        }
+        @media screen and (max-width: 991px) {
+            flex-direction: column;
+            flex: initial;
+            justify-content: center;
+            &__text{
+                font-size: 1rem;
+                line-height: 23.1px;
+                text-align: center;
+                margin-bottom: 16px;
+            }
+            .btn--white{
+                flex:0 0 48px;
+            }
         }
     }
 
@@ -63,6 +84,8 @@
                         color: $blue;
                         margin-bottom: 10px;
                         a {
+                            cursor: initial;
+                            pointer-events: none;
                             color: $blue;
                             font-weight: 700;
                         }
@@ -119,55 +142,36 @@
 
 }
 
-@media (max-width: 1023px) {
-    .footer{
-        .contact-us{
-            width: calc(100% - 20px);
-            padding: 0 40px;
-            &__text{
-                font-size: 28px;
-            }
-        }
-    }
-}
-
 @media (max-width: 767px) {
     .footer{
         padding: 200px 20px 20px 20px;
-        .contact-us{
-            width: calc(100% - 20px);
-            padding:  40px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: auto;
-            &__text{
-                margin: 0 auto;
-                text-align: center;
-                margin-bottom: 20px;
-            }
-        }
 
         .container{
             flex-direction: column;
         }
 
         &__column{
+            align-items: center;
             width: 100%;
-            margin-bottom: 20px;
+            margin: 0 auto 20px;
+            max-width: 220px;
+            text-align: center;
+            &:last-child {
+                align-items: center;
+            }
             nav{
                 padding: 0;
                 margin: 0;
                 ul{
                     padding: 0;
+                    li {
+                        text-align: center;
+                        width: 100%;
+                    }
                 }
             }
-
-            &:last-child{
-                min-height: auto;
-                justify-content: center;
-                align-items: center;
-                margin: 20px 0;
+            &-logo {
+                margin: 0 auto;
             }
         }
     }

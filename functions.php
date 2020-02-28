@@ -26,7 +26,10 @@ function js_scripts() {
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'slick', get_stylesheet_directory_uri() . '/js/slick.js', array( 'jquery' ),'',true );
     wp_enqueue_script( 'functionality', get_stylesheet_directory_uri() . '/js/functionality.js', array('jquery'),'',true );
-    
+	if (preg_match('/MSIE\s(?P<v>\d+)/i', @$_SERVER['HTTP_USER_AGENT'], $B) && $B['v'] <= 8) {
+	wp_enqueue_script( 'hubspot-legacy', '//js.hsforms.net/forms/v2-legacy.js', '','',false );
+	}
+	wp_enqueue_script( 'hubspot', '//js.hsforms.net/forms/v2.js', '','',false );
 
 }
 add_action( 'wp_enqueue_scripts', 'js_scripts' );

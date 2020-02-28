@@ -1,10 +1,43 @@
-    <footer class="footer">
+<!-- Modal for subscribe form -->
+<div id="subscribe-modal" class="modal">
+    <div class="modal__container">
+        <section class="form">
+            <div class="form__content">
+                <i class="fas fa-times" onclick="openModalSubscribe()"></i>
+                <script>
+                    hbspt.forms.create({
+                        portalId: "1641032",
+                        formId: "e6224b82-3a4f-46db-941b-a493cc233e5f",
+                        sfdcCampaignId: "701i0000001a4AQAAY"
+                    });
+                </script>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- ends Modal for subscribe form -->
+
+<!-- Modal for Hubspot forms -->
+<div id="modal" class="modal">
+    <div class="modal__container">
+        <section class="form">
+            <div class="form__content">
+                <i class="fas fa-times" onclick="openModal()"></i>
+                <div id="form-container"></div>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- ends Modal Hubspot for forms -->
+
+
+<footer class="footer">
         <div class="contact-us">
             <div class="contact-us__text">
                 Speak to a Tulip Consultant today 
                 <br>and see how we can help you.
             </div>
-            <a class="btn--white" href="">Contact Us</a>
+            <a class="btn--white" href="./contact">Contact Us</a>
         </div>
         <div class="container">
             <div class="footer__column">
@@ -21,7 +54,7 @@
                 <p class="footer__column-text">
                     A Mobile Platform Built Exclusively for Store Associates
                     <br><br>
-                    © Tulip, <?php echo date("Y"); ?> | Privacy Policy
+                    © Tulip, <?php echo date("Y"); ?> | <a href="https://resources.tulip.com/privacy-policy" target="_blank">Privacy Policy</a>
                 </p>
             </div>
             
@@ -44,10 +77,12 @@
             ?>
             
            
+
+			
             <div class="footer__column">
-                <a class="footer__column-btn" href="">Suscribe</a>
+                <a class="footer__column-btn" onclick="openModalSubscribe()">Subscribe</a>
                 <div class="rss">
-                    <a href="">
+                    <a href="https://www.linkedin.com/company/tulip-retail" target='_blank'>
                         <svg viewBox="0 0 24 24">
                             <defs>
                                 <style>
@@ -76,7 +111,7 @@
                             </g>
                         </svg>
                     </a>
-                    <a href="">
+                    <a href="https://twitter.com/tulipretail" target="_blank">
                         <svg viewBox="0 0 24 24">
                             <g data-name="Layer 2">
                                 <g data-name="Layer 1" fill="none">

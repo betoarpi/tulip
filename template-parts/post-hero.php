@@ -1,7 +1,9 @@
  <div class="post__hero">
-     <div class="post__hero__image">
-         <?php echo get_the_post_thumbnail(get_the_ID(), "full"); ?>
-     </div>
+     <?php if (get_the_post_thumbnail(get_the_ID(), "full")) : ?>
+         <div class="post__hero__image">
+             <?php echo get_the_post_thumbnail(get_the_ID(), "full"); ?>
+         </div>
+     <?php endif; ?>
      <div class="post__hero__description">
          <h3><?php if ('post' == get_post_type()) {
                     $categories = get_the_category();

@@ -2,6 +2,7 @@
 .leaders,
 .company,
 .team,
+.culture,
 .partners,
 .investors {
     padding: 100px 0;
@@ -145,19 +146,23 @@
     justify-content: space-between;
     align-items: center;
     &__img{
-        width: calc(50% - 40px);
+        width: calc(50% - 60px);
         max-width: 526px;
         display: block;
-        width: 100%;
+    }
+    h2 {
+        font-size: 22px;
+        color:#d5cfce;
+        font-weight: 900;
+        margin-bottom: 20px;
     }
     &__description{
-        width: calc(50% - 40px);
+        width: calc(50% - 60px);
         &-title{
             color: $blue;
             font-weight: 800;
             font-size: 36px;
             letter-spacing: .36px;
-            line-height: 49px;
             margin: 20px 0;
         }
         &-text{
@@ -174,7 +179,10 @@
     align-items: center;
     &__description{
         width: calc(50% - 40px);
-        h2{
+        h2 {
+            font-size: 22px;
+            color:#d5cfce;
+            font-weight: 900;
             margin-bottom: 20px;
         }
         &-title{
@@ -211,6 +219,12 @@
         display: flex;
         flex-direction: row;
         margin-bottom: 0px;
+        h2 {
+            font-size: 22px;
+            color:#d5cfce;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
     }
     &__boxes {
         display: flex;
@@ -232,15 +246,18 @@
             border-radius: 16px;
 
             &:first-child {
-                margin-top: 6rem;
+                margin-top: 9rem;
                 margin-right: 2rem;
             }
+            &:nth-child(2) {
+                margin-top: -3rem;
+            }
             &:nth-child(3) {
-                margin-top: 13.5rem;
+                margin-top: 16.5rem;
                 margin-left: 2rem;
             }
             &:last-child {
-                margin-top: -11rem;
+                margin-top: -15rem;
             }
             &-img{
                 display: block;
@@ -264,10 +281,10 @@
         
     &__description {
         position: absolute;
-        right: -260px;
-        top: -60px;
+        right: -170px;
+        //top: -60px;
         width: 100%;
-        max-width: 490px;
+        max-width: 420px;
         &-content {
             position: relative;
             width: auto;
@@ -277,6 +294,7 @@
             color: $blue;
             font-weight: 800;
             margin: 20px 0;
+            line-height: 41.4px;
         }
         &-subtitle{
             font-size: 22px;
@@ -340,24 +358,32 @@
 }
 
 .investors{
+    h2 {
+        font-size: 22px;
+        color:#d5cfce;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
     &__title{
         font-size: 32px;
         font-weight: 800;
         color: $blue;
-        margin: 40px 0;
+        margin: 1.5rem 0;
     }
     &__companies{
         display: flex;
-        justify-content: center;
+        gap:1.5rem;
+        justify-content: space-between;
         align-items: center;
         margin: 80px 0;
+        flex-wrap: wrap;
         &-item{
             min-height: 250px;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             align-items: flex-start;
-            margin: 20px;
+            flex:0 0 29%;
             img{
                 display: block;
                 margin-bottom: 40px;
@@ -437,22 +463,33 @@
     }
 }
 
+@media (min-width: 1024px) {
+    .company {
+        gap:8rem;
+    }
+}
+
 @media (max-width: 1023px) {
     .info,
     .leaders,
     .company,
+    .culture,
     .team,
     .partners,
     .investors {
         padding: 50px 0;
     }
     
-    .info{
-        flex-direction: column;
+    .info {
+        flex-direction: column-reverse !important;
         padding: 50px 0;
         &__description{
+            margin: 0 0 20px;
+            padding: 0 !important;
             width: 100%;
-            margin-bottom: 20px;
+            &-title {
+                font-size: 2.4rem !important;
+            }
             &-text{
                 max-width: 100%;
             }
@@ -579,10 +616,17 @@
             margin-bottom: 40px;
         }
     }
+}
 
-    .investors{
-        &__companies{
-            flex-wrap: wrap;
+@media (max-width: 767px) {
+    .investors {
+        &__companies {
+            flex-direction: column;
+            margin-top:45px;
+            max-width: 320px;
+            &-item {
+                min-height: 45px;
+            }
         }
     }
 }

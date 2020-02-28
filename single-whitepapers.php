@@ -17,6 +17,7 @@ get_header();
                 the_post();
 
                 get_template_part('template-parts/post-hero');
+                get_template_part('template-parts/content');
             }
         }
 
