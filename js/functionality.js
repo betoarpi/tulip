@@ -15,7 +15,7 @@ const openModal = (portalId, formId, sfdcCampaignId) => {
   const modalElement = document.getElementById('modal');
   modalElement.classList.toggle('active');
 
-  window.scrollTo(0, 0);
+  // window.scrollTo(0, 0);
 
 
   if (portalId && formId && sfdcCampaignId) {

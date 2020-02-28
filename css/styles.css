@@ -2473,17 +2473,46 @@ p, article ul, article ol, article blockquote {
 .logos__content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
+  text-align: center;
   margin: 0;
   max-width: 1000px;
   column-gap: 118px;
   row-gap: 60px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .logos__content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logos__content {
+    justify-content: flex-start;
+  }
 }
 .logos__content-item {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .logos__content-item {
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 992px) {
+  .logos__content-item {
+    margin-right: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logos__content-item {
+    margin-right: 80px;
+  }
 }
 .logos__content-item img {
   display: block;
@@ -3958,6 +3987,43 @@ p, article ul, article ol, article blockquote {
   width: 100%;
   z-index: -300;
 }
+.modal__container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+.modal__container .hbspt-form form {
+  max-width: 300px;
+  max-height: 520px;
+  overflow-y: scroll;
+}
+.modal__container .hbspt-form form .field {
+  width: 100%;
+}
+.modal__container .hbspt-form form .field label {
+  color: #33475b;
+  font-weight: 500;
+  font-size: 14px;
+}
+.modal__container .hbspt-form form .field input.hs-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 40px;
+  padding: 9px 10px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #33475b;
+  background-color: #f5f8fa;
+  border: 1px solid #cbd6e2;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.modal__container .hbspt-form form .field input.error {
+  border-color: #c87872;
+}
 .modal.active {
   opacity: 1;
   z-index: 1000;
@@ -3973,8 +4039,8 @@ p, article ul, article ol, article blockquote {
 }
 .modal .form__content {
   border-radius: 1.375rem 1.375rem 7.5rem 1.375rem;
-  padding-top: 4rem;
   position: relative;
+  padding: 50px;
 }
 .modal .form__content .fa-times {
   color: #747489;
@@ -3982,6 +4048,9 @@ p, article ul, article ol, article blockquote {
   position: absolute;
   right: 1.5rem;
   top: 1.5rem;
+}
+.modal .form__content .fa-times:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
