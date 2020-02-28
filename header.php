@@ -4,9 +4,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <?php if(is_archive()): 
-     
+
+    <?php if(is_archive()):
+
      //Obtener post type
       $pt = get_post_type_object($post_type);
       $post_type = get_post_type();
@@ -15,7 +15,7 @@
     <?php else: ?>
     <title><?php the_title(); ?> | Tulip</title>
     <?php endif; ?>
-    
+
 
     <script src="https://kit.fontawesome.com/fd7543ab2c.js" crossorigin="anonymous"></script>
      <?php wp_head(); ?>
@@ -33,7 +33,7 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <header class="container header">
-    <a href="/" class="header__logo">
+    <a href="<?php echo home_url('/'); ?>" class="header__logo">
         <svg viewBox="0 0 105 43">
             <g fill="#f54862" fill-rule="nonzero">
                 <path d="M49.87 34h-2.74V8.489H38V6h21v2.578h-9.13z"></path>
@@ -44,18 +44,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </svg>
     </a>
     <?php
-        wp_nav_menu( array( 
-            'theme_location' => 'main-menu', 
+        wp_nav_menu( array(
+            'theme_location' => 'main-menu',
                 'items_wrap' => '<nav class="header__nav"><ul>%3$s</ul></nav>',
-                'container'=> '')); 
+                'container'=> ''));
     ?>
     <?php
-        wp_nav_menu( array( 
-            'theme_location' => 'main-menu', 
-                'items_wrap' => '<nav class="header__nav--mobile" id="menuMobile"><div class="btn--close" id="btnCloseMenu"><i class="fas fa-times"></i></div><ul>%3$s</ul></nav>',
-                'container'=> '')); 
+        wp_nav_menu( array(
+            'theme_location' => 'main-menu',
+                'items_wrap' => '<nav class="header__nav--mobile" id="menuMobile"><ul>%3$s</ul></nav>',
+                'container'=> ''));
     ?>
-    <div class="header__btnMenu" id="btnMenu">
+    <!-- <div class="header__btnMenu" id="btnMenu">
         <i class="fas fa-bars"></i>
-    </div>
+    </div> -->
+	<button class="hamburger hamburger--slider header__btnMenu" id="btnMenu" type="button">
+	  <span class="hamburger-box">
+	    <span class="hamburger-inner"></span>
+	  </span>
+	</button>
 </header>
