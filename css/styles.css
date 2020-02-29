@@ -1250,6 +1250,7 @@ p, article ul, article ol, article blockquote {
 }
 .carousel__item .left img:first-child {
   width: 100%;
+  margin-bottom: 40px;
 }
 .carousel__item .left img:last-child {
   width: 100%;
