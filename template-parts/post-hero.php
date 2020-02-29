@@ -1,7 +1,7 @@
  <div class="post__hero">
-     <?php if (get_the_post_thumbnail(get_the_ID(), "full")) : ?>
+     <?php if ( has_post_thumbnail() ) : ?>
          <div class="post__hero__image">
-             <?php echo get_the_post_thumbnail(get_the_ID(), "full"); ?>
+             <?php echo get_the_post_thumbnail(get_the_ID(), "resources-hero"); ?>
          </div>
      <?php endif; ?>
      <div class="post__hero__description">

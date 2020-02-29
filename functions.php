@@ -9,13 +9,13 @@ Note: this function loads the parent stylesheet before, then child theme stylesh
 */
 
 function Tulip_enqueue_child_styles() {
-	wp_enqueue_style( 
-		'slick-css', 
+	wp_enqueue_style(
+		'slick-css',
 		get_stylesheet_directory_uri() . '/css/slick.css',
 		array(),
 		wp_get_theme()->get('Version') );
-	wp_enqueue_style( 
-		'child-style', 
+	wp_enqueue_style(
+		'child-style',
 		get_stylesheet_directory_uri() . '/css/styles.css',
 		array(),
 		wp_get_theme()->get('Version') );
@@ -45,3 +45,9 @@ function wpb_custom_new_menu() {
   );
 }
 add_action( 'init', 'wpb_custom_new_menu' );
+
+add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
+function wpdocs_theme_setup() {
+	add_image_size('resources-image', 360, 240, true);
+	add_image_size('resources-hero', 1267, 380, true);
+}

@@ -150,12 +150,14 @@
   display: grid;
   gap: 1rem;
   position: relative;
+  grid-template-rows: 240px max-content 1fr max-content;
   &__thumbnail {
     border-radius: 2.75rem 0;
     overflow: hidden;
     width: 100%;
     img {
       max-width: 100%;
+      height: auto;
     }
   }
   &__title {

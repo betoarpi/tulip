@@ -71,7 +71,13 @@ get_header();
 
                 <article class='post-item'>
                     <figure class="post-item__thumbnail">
-                        <?php echo get_the_post_thumbnail(get_the_ID(), "medium"); ?>
+                        <?php
+                            if( has_post_thumbnail() ):
+                                echo get_the_post_thumbnail(get_the_ID(), "resources-image");
+                            else:
+                                echo "<img src='https://via.placeholder.com/360x240' />";
+                            endif;
+                        ?>
                     </figure>
                     <h4 class="post-item__title"><?php the_title(); ?></h4>
                     <div class="post-item__excerpt">
@@ -86,7 +92,7 @@ get_header();
             wp_reset_postdata();
             wp_reset_query();
             ?>
-            <a class="btn--blue resources__grid__btn">View All</a>
+            <a class="btn--blue resources__grid__btn" href="<?php echo get_post_type_archive_link('whitepapers'); ?>">View All</a>
         <?php
         else : ?>
 
@@ -115,7 +121,13 @@ get_header();
 
                 <article class='post-item'>
                     <figure class="post-item__thumbnail">
-                        <?php echo get_the_post_thumbnail(get_the_ID(), "medium"); ?>
+                        <?php
+                            if( has_post_thumbnail() ):
+                                echo get_the_post_thumbnail(get_the_ID(), "resources-image");
+                            else:
+                                echo "<img src='https://via.placeholder.com/360x240' />";
+                            endif;
+                        ?>
                     </figure>
                     <h4 class="post-item__title"><?php the_title(); ?></h4>
                     <div class="post-item__excerpt">
@@ -130,7 +142,7 @@ get_header();
             wp_reset_postdata();
             wp_reset_query();
             ?>
-            <a class="btn--blue resources__grid__btn">View All</a>
+            <a class="btn--blue resources__grid__btn" href="<?php echo get_post_type_archive_link('webinars'); ?>">View All</a>
         <?php
         else : ?>
 
@@ -160,7 +172,13 @@ get_header();
 
                 <article class='post-item'>
                     <figure class="post-item__thumbnail">
-                        <?php echo get_the_post_thumbnail(get_the_ID(), "medium"); ?>
+                        <?php
+                            if( has_post_thumbnail() ):
+                                echo get_the_post_thumbnail(get_the_ID(), "resources-image");
+                            else:
+                                echo "<img src='https://via.placeholder.com/360x240' />";
+                            endif;
+                        ?>
                     </figure>
                     <h4 class="post-item__title"><?php the_title(); ?></h4>
                     <div class="post-item__excerpt">
@@ -175,7 +193,7 @@ get_header();
             wp_reset_postdata();
             wp_reset_query();
             ?>
-            <a class="btn--blue resources__grid__btn">View All</a>
+            <a class="btn--blue resources__grid__btn" href="<?php echo get_post_type_archive_link('whitepapers'); ?>">View All</a>
         <?php
         else : ?>
 

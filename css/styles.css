@@ -3774,6 +3774,7 @@ p, article ul, article ol, article blockquote {
   display: grid;
   gap: 1rem;
   position: relative;
+  grid-template-rows: 240px max-content 1fr max-content;
 }
 .post-item__thumbnail {
   border-radius: 2.75rem 0;
@@ -3782,6 +3783,7 @@ p, article ul, article ol, article blockquote {
 }
 .post-item__thumbnail img {
   max-width: 100%;
+  height: auto;
 }
 .post-item__title {
   font-weight: 400;
