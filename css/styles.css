@@ -2751,7 +2751,7 @@ p, article ul, article ol, article blockquote {
   content: "";
   background-color: #f6f5f5;
   display: block;
-  width: 600px;
+  width: 720px;
   height: 90%;
   position: absolute;
   z-index: -1;
@@ -2763,6 +2763,8 @@ p, article ul, article ol, article blockquote {
 .features.right::before {
   left: initial;
   right: -200px;
+  transform: rotateY(180deg);
+  top: 0;
 }
 .features__image {
   width: 50%;
