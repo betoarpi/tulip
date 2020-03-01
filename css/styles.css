@@ -357,6 +357,10 @@ html, body {
   padding: 0;
   font-size: 15px;
   font-family: "Nunito Sans", sans-serif;
+  text-rendering: optimizelegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 body::before {
@@ -1379,6 +1383,7 @@ p, article ul, article ol, article blockquote {
 .solution__navigate-item.active .solution__navigate-item-button {
   display: inline-block !important;
   margin: 10px 20px;
+  font-size: 15px;
 }
 .solution__right {
   min-height: 700px;

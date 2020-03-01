@@ -5,6 +5,10 @@ html, body{
 	padding: 0;
     font-size: 15px;
     font-family: 'Nunito Sans', sans-serif;
+	text-rendering: optimizelegibility;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
 }
 // Adding gray background to body
 
