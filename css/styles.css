@@ -1637,9 +1637,15 @@ p, article ul, article ol, article blockquote {
 .clients__image {
   width: calc(40% - 40px);
 }
+@media screen and (min-width: 992px) {
+  .clients__image {
+    margin-top: 65px;
+  }
+}
 .clients__image img {
   display: block;
   width: 100%;
+  padding: 8px;
 }
 
 @media (max-width: 1279px) {
