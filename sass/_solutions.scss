@@ -279,7 +279,7 @@
 
 .quote-content{
     width: 100%;
-    max-width: 1060px;
+    max-width: 1260px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -310,7 +310,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        max-width: 700px;
+        max-width: 770px;
         gap: 40px;
         padding-left: 40px;
         @media screen and (max-width: 768px){
@@ -323,13 +323,13 @@
                 margin-left: 40px;
             }
             .text{
-                font-size: 22.5px;
+                font-size: 27px;
                 font-weight: 600;
                 font-style: italic;
                 letter-spacing: .36px;
-                line-height: 31.5px;
+                line-height: 38px;
                 color: $blue;
-                margin: 20px 0;
+                margin: 20px 0 72px;
                 border-left: solid 1px rgb(204, 204, 204);
                 padding-left: 40px;
             }
@@ -343,7 +343,7 @@
         img{
             width: 100%;
             display: block;
-            max-width: 600px;
+            // max-width: 600px;
         }
     }
 }

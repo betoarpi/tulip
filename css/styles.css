@@ -860,6 +860,7 @@ p, article ul, article ol, article blockquote {
     position: relative;
     text-transform: uppercase;
     padding: 15px 0;
+    letter-spacing: 2.4px;
   }
   .header__btnMenu {
     display: block;
@@ -2827,7 +2828,7 @@ p, article ul, article ol, article blockquote {
 
 .quote-content {
   width: 100%;
-  max-width: 1060px;
+  max-width: 1260px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -2859,7 +2860,7 @@ p, article ul, article ol, article blockquote {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-width: 700px;
+  max-width: 770px;
   gap: 40px;
   padding-left: 40px;
 }
@@ -2873,13 +2874,13 @@ p, article ul, article ol, article blockquote {
   margin-left: 40px;
 }
 .quote-content .right .quote .text {
-  font-size: 22.5px;
+  font-size: 27px;
   font-weight: 600;
   font-style: italic;
   letter-spacing: 0.36px;
-  line-height: 31.5px;
+  line-height: 38px;
   color: #151043;
-  margin: 20px 0;
+  margin: 20px 0 72px;
   border-left: solid 1px #cccccc;
   padding-left: 40px;
 }
@@ -2892,7 +2893,6 @@ p, article ul, article ol, article blockquote {
 .quote-content .right img {
   width: 100%;
   display: block;
-  max-width: 600px;
 }
 
 .business-value {
