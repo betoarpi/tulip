@@ -8,7 +8,7 @@ function createTemplate(HTMLString) {
 const openModalSubscribe = () => {
   const modalElement = document.getElementById('subscribe-modal');
   modalElement.classList.toggle('active');
-  window.scrollTo(0, 0)
+  // window.scrollTo(0, 0)
 }
 
 const openModal = (portalId, formId, sfdcCampaignId) => {
