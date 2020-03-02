@@ -95,6 +95,10 @@
                         font-size: 16px;
                         line-height: 20px;
                         letter-spacing: .3px;
+
+                        &:hover{
+                            color: $footer_hover;
+                        }
                     }
                 }
             }
@@ -113,6 +117,7 @@
             letter-spacing: .3px;
             &:hover{
                 text-decoration: underline;
+                color: $footer_hover;
             }
         }
         &-btn{
@@ -136,6 +141,10 @@
                 width: 30px;
                 color: red;
                 margin-left: 10px;
+
+                &:hover stroke{
+                    fill: $footer_hover;
+                }
             }
         }
     }

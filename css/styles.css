@@ -990,6 +990,9 @@ p, article ul, article ol, article blockquote {
   line-height: 20px;
   letter-spacing: 0.3px;
 }
+.footer__column nav ul li a:hover {
+  color: #151043;
+}
 .footer__column:last-child {
   display: flex;
   flex-direction: column;
@@ -1005,6 +1008,7 @@ p, article ul, article ol, article blockquote {
 }
 .footer__column-tel:hover {
   text-decoration: underline;
+  color: #151043;
 }
 .footer__column-btn {
   border: solid 1px #747489;
@@ -1028,6 +1032,9 @@ p, article ul, article ol, article blockquote {
   width: 30px;
   color: red;
   margin-left: 10px;
+}
+.footer__column .rss a:hover stroke {
+  fill: #151043;
 }
 
 @media (max-width: 767px) {
@@ -1125,6 +1132,11 @@ p, article ul, article ol, article blockquote {
   background: white;
   border-radius: 12px;
 }
+@media screen and (min-width: 992px) {
+  .about__cards-item {
+    display: block;
+  }
+}
 .about__cards-item:first-child {
   margin-bottom: calc(-125px + 1rem);
 }
@@ -1167,6 +1179,11 @@ p, article ul, article ol, article blockquote {
 }
 .about__cards-item-content {
   margin-top: 50px;
+}
+@media screen and (min-width: 992px) {
+  .about__cards-item-content {
+    margin-top: 40px;
+  }
 }
 .about__cards-item-content h4 {
   font-size: 15.3px;
@@ -3404,6 +3421,12 @@ p, article ul, article ol, article blockquote {
   font-weight: 600;
   font-size: 18px;
   font-family: "Nunito Sans", sans-serif;
+}
+.form__content .hbspt-form form fieldset .field label.hs-error-msg {
+  color: #c8c0c0;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 10px;
 }
 .form__content .hbspt-form form fieldset .field input,
 .form__content .hbspt-form form fieldset .field textarea {

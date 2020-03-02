@@ -218,6 +218,13 @@
                             font-weight: 600;
                             font-size: 18px;
                             font-family: 'Nunito Sans', sans-serif;
+
+                            &.hs-error-msg{
+                                color: #c8c0c0;
+                                font-weight: 400;
+                                font-size: 16px;
+                                padding-top: 10px;
+                            }
                         }
                         input,
                         textarea{

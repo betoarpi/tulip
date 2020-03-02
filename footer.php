@@ -125,7 +125,7 @@
                         </svg>
                     </a>
                 </div>
-                <a class="footer__column-tel" href="">1-855-834-4587</a>
+                <a class="footer__column-tel" href="tel:1-855-834-4587">1-855-834-4587</a>
             </div>
         </div>
     </footer>
