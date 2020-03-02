@@ -37,7 +37,7 @@
                 Speak to a Tulip Consultant today
                 <br>and see how we can help you.
             </div>
-            <a class="btn--white" href="./contact">Contact Us</a>
+            <a class="btn--white" href="./contact">Request a Demo</a>
         </div>
         <div class="container">
             <div class="footer__column">
