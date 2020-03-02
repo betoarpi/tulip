@@ -34,7 +34,7 @@
 <footer class="footer">
         <div class="contact-us">
             <div class="contact-us__text">
-                Speak to a Tulip Consultant today 
+                Speak to a Tulip Consultant today
                 <br>and see how we can help you.
             </div>
             <a class="btn--white" href="./contact">Contact Us</a>
@@ -52,33 +52,33 @@
                     </svg>
                 </div>
                 <p class="footer__column-text">
-                    A Mobile Platform Built Exclusively for Store Associates
+                    A Mobile Platform Built Exclusively for Store of the Future
                     <br><br>
                     © Tulip, <?php echo date("Y"); ?> | <a href="https://resources.tulip.com/privacy-policy" target="_blank">Privacy Policy</a>
                 </p>
             </div>
-            
-           
+
+
              <?php
-            wp_nav_menu( array( 
-                'theme_location' => 'footer', 
+            wp_nav_menu( array(
+                'theme_location' => 'footer',
                  'items_wrap' => ' <div class="footer__column"><nav>
                     <ul>%3$s</ul></nav></div>',
                      'container' => ''
-               ) ); 
+               ) );
             ?>
              <?php
-            wp_nav_menu( array( 
-                'theme_location' => 'footer-right-menu', 
+            wp_nav_menu( array(
+                'theme_location' => 'footer-right-menu',
                  'items_wrap' => ' <div class="footer__column"><nav>
                     <ul>%3$s</ul></nav></div>',
                     'container' => ''
-               ) ); 
+               ) );
             ?>
-            
-           
 
-			
+
+
+
             <div class="footer__column">
                 <a class="footer__column-btn" onclick="openModalSubscribe()">Subscribe</a>
                 <div class="rss">
@@ -129,8 +129,8 @@
             </div>
         </div>
     </footer>
-    
-    
+
+
 <?php wp_footer(); ?>
 </body>
 </html>
