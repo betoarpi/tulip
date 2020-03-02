@@ -363,6 +363,12 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
+@media screen and (max-width: 768px) {
+  .hide-on-mobile a[href="#"] {
+    display: none;
+  }
+}
+
 body::before {
   background: #F6F5F5;
   border-radius: 0 0 100px 0;
@@ -845,6 +851,7 @@ p, article ul, article ol, article blockquote {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: flex;
   }
   .header__nav--mobile ul li {
     margin-left: 50px;
@@ -861,6 +868,21 @@ p, article ul, article ol, article blockquote {
     text-transform: uppercase;
     padding: 15px 0;
     letter-spacing: 2.4px;
+  }
+  .header__nav--mobile ul li[class*=hide] {
+    order: 4;
+    border-top: 2px solid #151043;
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+  .header__nav--mobile ul li:first-child {
+    order: 1;
+  }
+  .header__nav--mobile ul li:nth-child(3) {
+    order: 2;
+  }
+  .header__nav--mobile ul li:last-child {
+    order: 3;
   }
   .header__btnMenu {
     display: block;

@@ -11,7 +11,14 @@ html, body{
     -webkit-font-smoothing: antialiased;
 }
 // Adding gray background to body
+.hide-on-mobile{
 
+	@media screen and (max-width: 768px){
+		a[href="#"]{
+			display: none;
+		}
+	}
+}
 body{
 	&::before {
     background: #F6F5F5;

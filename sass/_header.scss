@@ -179,6 +179,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                display: flex;
                 li{
                     margin-left: 50px;
                     position: relative;
@@ -193,6 +194,22 @@
                         text-transform: uppercase;
                         padding: 15px 0;
                         letter-spacing: 2.4px;
+                    }
+                    &[class*="hide"]{
+                        order: 4;
+                        border-top: 2px solid rgb(21,16,67);
+                        margin-top: 1rem;
+                        padding-top: 1rem;
+                    }
+                    &:first-child{
+                        order: 1;
+                    }
+                    &:nth-child(3){
+                        order: 2;
+
+                    }
+                    &:last-child{
+                        order: 3;
                     }
                 }
             }
