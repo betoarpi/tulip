@@ -49,6 +49,32 @@
                         left: 0;
                     }
                 }
+
+                &.current-menu-item{
+                    a{
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            background-color: $red;
+                            height: 2px;
+                            width: calc(100% + 2px);
+                            bottom: -10px;
+                            left: 0;
+                        }
+                    }
+
+                    &.btn{
+                        a{
+                            background-color: $pink;
+                            color: white;
+
+                            &:after{
+                                display: none;
+                            }
+                        }
+
+                    }
+                }
                 &.btn{
                     a {
                         color: $red;

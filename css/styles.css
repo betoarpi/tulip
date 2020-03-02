@@ -732,6 +732,22 @@ p, article ul, article ol, article blockquote {
   bottom: -10px;
   left: 0;
 }
+.header__nav ul li.current-menu-item a::after {
+  content: "";
+  position: absolute;
+  background-color: #f54862;
+  height: 2px;
+  width: calc(100% + 2px);
+  bottom: -10px;
+  left: 0;
+}
+.header__nav ul li.current-menu-item.btn a {
+  background-color: #f54862;
+  color: white;
+}
+.header__nav ul li.current-menu-item.btn a:after {
+  display: none;
+}
 .header__nav ul li.btn a {
   color: #f54862;
   box-shadow: rgba(61, 51, 51, 0.25) 0px 5px 20px 0px;
@@ -3542,15 +3558,18 @@ p, article ul, article ol, article blockquote {
   border: none;
   background-image: none;
   text-shadow: none;
+  outline: none;
 }
-.form__content .hbspt-form form input[type=submit]:hover {
+.form__content .hbspt-form form input[type=submit]:hover, .form__content .hbspt-form form input[type=submit]:active {
   box-shadow: rgba(61, 51, 51, 0.25) 0px 5px 20px 0px;
   border-top: none;
   border-bottom: none;
   border-right: none;
   border-left: none;
-  background-color: #fff;
-  color: #151043;
+  background-color: #fff !important;
+  color: #151043 !important;
+  background-image: none !important;
+  border-color: transparent !important;
 }
 .form__see {
   width: 376px;
