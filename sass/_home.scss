@@ -591,15 +591,20 @@
             margin-bottom: 20px;
         }
         &-title{
-            font-size: 32px;
+            font-size: 36px;
             font-weight: 800;
+            line-height: 41px;
             color: $blue;
+            padding-right: 10px;
         }
         &-image, img {
             display: block;
             //width: 100%;
-            max-width: 620px;
+            max-width: 596px;
             margin: 50px 0;
+            @media screen and (min-width: 992px){
+                width: 100%;
+            }
         }
         &-text, p {
             font-size: 22px;

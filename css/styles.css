@@ -1636,14 +1636,21 @@ p, article ul, article ol, article blockquote {
   margin-bottom: 20px;
 }
 .clients__description-title {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 800;
+  line-height: 41px;
   color: #151043;
+  padding-right: 10px;
 }
 .clients__description-image, .clients__description img {
   display: block;
-  max-width: 620px;
+  max-width: 596px;
   margin: 50px 0;
+}
+@media screen and (min-width: 992px) {
+  .clients__description-image, .clients__description img {
+    width: 100%;
+  }
 }
 .clients__description-text, .clients__description p, .clients__description article ul, article .clients__description ul, .clients__description article ol, article .clients__description ol, .clients__description article blockquote, article .clients__description blockquote {
   font-size: 22px;
