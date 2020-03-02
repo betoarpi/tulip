@@ -1216,7 +1216,7 @@ p, article ul, article ol, article blockquote {
   right: 90px;
   font-size: 25px;
   left: initial;
-  width: 46px;
+  width: 24px;
   height: 20px;
   cursor: pointer;
   z-index: 2;
@@ -1225,10 +1225,10 @@ p, article ul, article ol, article blockquote {
   color: #f54862;
   position: absolute;
   top: 332px;
-  right: 30px;
+  right: 43px;
   font-size: 25px;
   left: initial;
-  width: 46px;
+  width: 24px;
   height: 20px;
   cursor: pointer;
   z-index: 2;
