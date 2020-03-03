@@ -71,6 +71,7 @@ get_header();
 
                 <article class='post-item'>
                     <figure class="post-item__thumbnail">
+                        <a href="<?php echo get_permalink(); ?>">
                         <?php
                             if( has_post_thumbnail() ):
                                 echo get_the_post_thumbnail(get_the_ID(), "resources-image");
@@ -78,10 +79,11 @@ get_header();
                                 echo "<img src='https://via.placeholder.com/360x240' />";
                             endif;
                         ?>
+                        </a>
                     </figure>
                     <h4 class="post-item__title"><?php the_title(); ?></h4>
                     <div class="post-item__excerpt">
-                        <p><?php the_excerpt(); ?></p>
+                        <p><?php echo get_excerpt(140); ?></p>
                     </div>
                     <a class="post-item__link link" href="<?php echo get_permalink(); ?>">Read More <i class="fas fa-arrow-right"></i></a>
                 </article>
@@ -121,6 +123,7 @@ get_header();
 
                 <article class='post-item'>
                     <figure class="post-item__thumbnail">
+                        <a href="<?php echo get_permalink(); ?>">
                         <?php
                             if( has_post_thumbnail() ):
                                 echo get_the_post_thumbnail(get_the_ID(), "resources-image");
@@ -128,10 +131,11 @@ get_header();
                                 echo "<img src='https://via.placeholder.com/360x240' />";
                             endif;
                         ?>
+                        </a>
                     </figure>
                     <h4 class="post-item__title"><?php the_title(); ?></h4>
                     <div class="post-item__excerpt">
-                        <p><?php the_excerpt(); ?></p>
+                        <p><?php echo get_excerpt(140); ?></p>
                     </div>
                     <a class="post-item__link link" href="<?php echo get_permalink(); ?>">Read More <i class="fas fa-arrow-right"></i></a>
                 </article>
@@ -172,6 +176,7 @@ get_header();
 
                 <article class='post-item'>
                     <figure class="post-item__thumbnail">
+                        <a href="<?php echo get_permalink(); ?>">
                         <?php
                             if( has_post_thumbnail() ):
                                 echo get_the_post_thumbnail(get_the_ID(), "resources-image");
@@ -179,10 +184,11 @@ get_header();
                                 echo "<img src='https://via.placeholder.com/360x240' />";
                             endif;
                         ?>
+                        </a>
                     </figure>
                     <h4 class="post-item__title"><?php the_title(); ?></h4>
                     <div class="post-item__excerpt">
-                        <p><?php the_excerpt(); ?></p>
+                        <p><?php echo get_excerpt(140); ?></p>
                     </div>
                     <a class="post-item__link link" href="<?php echo get_permalink(); ?>">Read More <i class="fas fa-arrow-right"></i></a>
                 </article>

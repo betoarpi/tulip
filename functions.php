@@ -51,3 +51,21 @@ function wpdocs_theme_setup() {
 	add_image_size('resources-image', 360, 240, true);
 	add_image_size('resources-hero', 1267, 380, true);
 }
+
+function custom_excerpt_length( $length ) {
+        return 20;
+    }
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function get_excerpt($limit, $source = null){
+
+    $excerpt = $source == "content" ? get_the_content() : get_the_excerpt();
+    $excerpt = preg_replace(" (\[.*?\])",'',$excerpt);
+    $excerpt = strip_shortcodes($excerpt);
+    $excerpt = strip_tags($excerpt);
+    $excerpt = substr($excerpt, 0, $limit);
+    $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+    $excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
+    // $excerpt = $excerpt.'... <a href="'.get_permalink($post->ID).'">more</a>';
+    return $excerpt;
+}
