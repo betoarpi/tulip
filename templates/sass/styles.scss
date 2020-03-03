@@ -1,0 +1,42 @@
+
+/*
+Theme Name:   Tulip
+Description:  New theme for Tulip
+Author:       AdhocWorks
+Author URL:   https://adhocworks.com/
+Template:     twentytwenty
+Version:      1.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  Tulip
+*/
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,600i,700,800,900&display=swap');
+
+
+// Variables
+@import "normalize";
+@import "variables";
+@import "init";
+@import "elements";
+
+
+@import "header";
+@import "footer";
+
+@import "home";
+@import "about";
+@import "partners";
+
+@import "solutions";
+
+@import "contact";
+
+@import "default";
+@import "resources";
+@import "post";
+@import "modal";
+@import "pages";
+
+@import "menu/_hamburgers";

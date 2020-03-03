@@ -37,7 +37,7 @@
                 Speak to a Tulip Consultant today
                 <br>and see how we can help you.
             </div>
-            <a class="btn--white" href="./contact">Request a Demo</a>
+            <a class="btn--white" onclick="openModal('1641032', '82065c23-0d67-4763-af01-a99db1b65fd6', '701i0000001a4AQAAY')">Request a Demo</a>
         </div>
         <div class="container">
             <div class="footer__column">

@@ -46,13 +46,12 @@ get_header();
 
     <?php endif; ?>
 
-    <div class="resources__menu">
-        <ul>
-            <li><a href="/blog">Our Blog</a></li>
-            <li><a href="/webinars">Webinars</a></li>
-            <li><a href="/whitepapers">Whitepapers</a></li>
-        </ul>
-    </div>
+   <?php
+        wp_nav_menu( array(
+            'theme_location' => 'menu-resources',
+                'items_wrap' => '<div class="resources__menu"><ul>%3$s</ul></div>',
+                'container'=> ''));
+    ?>
 
     <section class="resources__grid posts-grid" id="blog">
         <h2 class="resources__grid__title">Featured Blog Posts</h2>
