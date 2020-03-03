@@ -94,7 +94,7 @@ get_header();
             wp_reset_postdata();
             wp_reset_query();
             ?>
-            <a class="btn--blue resources__grid__btn" href="<?php echo get_post_type_archive_link('whitepapers'); ?>">View All</a>
+            <a class="btn--blue resources__grid__btn" href="<?php echo home_url() . "/blog/"; ?>">View All</a>
         <?php
         else : ?>
 
