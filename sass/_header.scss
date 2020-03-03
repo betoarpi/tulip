@@ -10,7 +10,7 @@
         }
     }
     &__nav{
-        ul{
+        > ul{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -51,7 +51,7 @@
                 }
 
                 &.current-menu-item{
-                    a{
+                    > a{
                         &::after{
                             content: "";
                             position: absolute;
@@ -60,6 +60,12 @@
                             width: calc(100% + 2px);
                             bottom: -10px;
                             left: 0;
+                        }
+                    }
+
+                    &.current-menu-ancestor{
+                        .sub-menu{
+                            a:before{ display: none; }
                         }
                     }
 
