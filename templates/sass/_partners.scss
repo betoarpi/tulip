@@ -1,0 +1,80 @@
+.logos{
+    padding: 0 0 100px;
+    h2{
+        font-size: 1.15rem;
+        font-weight: 900;
+        color: rgb(218, 213, 212);
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        text-align: center;
+
+        @media screen and (min-width: 768px){
+            text-align: left;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        max-width: 1000px;
+        column-gap: 118px;
+        row-gap: 60px;
+        flex-direction: column;
+
+        @media screen and (min-width: 768px){
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        @media screen and (min-width: 768px){
+            justify-content: flex-start;
+        }
+
+        &-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            @media screen and (min-width: 768px){
+                justify-content: flex-start;
+            }
+            @media screen and (min-width: 992px){
+                margin-right: 60px;
+            }
+            @media screen and (min-width: 1200px){
+                margin-right: 80px;
+            }
+            img{
+                display: block;
+                height: 100px;
+                object-fit: contain;
+                width: 120px;
+            }
+            >a, .link{
+                color:$red;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: 40px;
+                transition: linear 0.2s;
+                position: relative;
+                &::after {
+                    content: "→";
+                    position: absolute;
+                    font-size: 1.5em;
+                    right: -1.25rem;
+                    transform: translate(50%, -0.25rem);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .logos {
+        padding: 0 0 50px 0;
+    }
+}

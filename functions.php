@@ -40,7 +40,8 @@ function wpb_custom_new_menu() {
   register_nav_menus(
     array(
       'main-menu' => __( 'Main Menu' ),
-       'footer-right-menu' => __( 'Footer Right Menu' )
+       'footer-right-menu' => __( 'Footer Right Menu' ),
+		'menu-resources' => __( 'Resources Menu' )
     )
   );
 }

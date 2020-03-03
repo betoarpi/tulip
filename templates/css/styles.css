@@ -3845,8 +3845,6 @@ p, article ul, article ol, article blockquote {
 .featured__image img {
   display: block;
   width: 100%;
-  object-fit: cover;
-  min-height: 320px;
 }
 .featured__description {
   width: 50%;

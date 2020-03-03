@@ -1,0 +1,23 @@
+.page-id-120 {
+  //This is the Runner Page
+  @media screen and (min-width: 1024px){
+    .request-demo {
+      padding: 100px 70px;
+      &__description {
+        padding-top: 45px;
+      }
+    }
+  }
+}
+
+.page-id-121 {
+  //This is the Partners Page
+  @media screen and (min-width: 1024px){
+    .request-demo {
+      padding-bottom: 200px;
+    }
+    .logos {
+      padding-bottom: 144px;
+    }
+  }
+}

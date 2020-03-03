@@ -1,0 +1,10 @@
+.default {
+  margin: 75px auto 0;
+  &__content {
+    article {
+      p {
+        margin: 2rem 0;
+      }
+    }
+  }
+}

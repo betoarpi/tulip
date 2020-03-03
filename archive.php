@@ -57,13 +57,14 @@ get_header();
 
 
 
-    <div class="resources__menu">
-        <ul>
-            <li><a href="/blog">Our Blog</a></li>
-            <li><a href="/webinars">Webinars</a></li>
-            <li><a href="/whitepapers">Whitepapers</a></li>
-        </ul>
-    </div>
+	<?php
+        wp_nav_menu( array(
+            'theme_location' => 'menu-resources',
+                'items_wrap' => '<div class="resources__menu"><ul>%3$s</ul></div>',
+                'container'=> ''));
+    ?>
+	
+	
 
     <section class="resources__grid " id="">
         <h2 class="resources__grid__title"> <?php echo $pt->label; ?> </h2>
@@ -87,7 +88,7 @@ get_header();
                     </figure>
                     <h4 class="post-item__title"><?php the_title(); ?></h4>
                     <div class="post-item__excerpt">
-                        <p><?php the_excerpt(); ?></p>
+                        <p><?php echo get_excerpt(150); ?></p>
                     </div>
                     <a class="post-item__link link" href="<?php echo get_permalink(); ?>">Read More <i class="fas fa-arrow-right"></i></a>
                 </article>
