@@ -14,7 +14,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            li{
+            > li{
                 margin-left: 50px;
                 position: relative;
                 &.menu-item-has-children {
@@ -63,12 +63,6 @@
                         }
                     }
 
-                    &.current-menu-ancestor{
-                        .sub-menu{
-                            a:before{ display: none; }
-                        }
-                    }
-
                     &.btn{
                         a{
                             background-color: $pink;
@@ -76,6 +70,26 @@
 
                             &:after{
                                 display: none;
+                            }
+                        }
+
+                    }
+                }
+
+                .sub-menu{
+
+                    > .current-menu-item{
+                        a{
+                            position: relative;
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                background-color: $red;
+                                height: 2px;
+                                width: calc(100% + 2px);
+                                bottom: 10px;
+                                left: 0;
+                                transform: none;
                             }
                         }
 
