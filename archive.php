@@ -88,7 +88,7 @@ get_header();
                     </figure>
                     <h4 class="post-item__title"><?php the_title(); ?></h4>
                     <div class="post-item__excerpt">
-                        <p><?php echo get_excerpt(150); ?></p>
+                        <p><?php echo get_excerpt(140); ?></p>
                     </div>
                     <a class="post-item__link link" href="<?php echo get_permalink(); ?>">Read More <i class="fas fa-arrow-right"></i></a>
                 </article>
