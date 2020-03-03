@@ -3935,6 +3935,7 @@ p, article ul, article ol, article blockquote {
   height: 380px;
   justify-content: flex-end;
   overflow: hidden;
+  width: 100%;
 }
 .post__hero__image img {
   object-fit: cover;
