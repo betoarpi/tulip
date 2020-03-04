@@ -5,7 +5,7 @@
 .solution,
 .roi,
 .clients {
-    padding: 100px 0;
+    padding: 75px 0;
 }
 
 .about{
@@ -13,27 +13,38 @@
     justify-content: space-between;
     align-items: center;
     &__description{
-        width: calc(50% - 40px);
+        width: 39%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @media screen and (min-width: 1360px){
+            width: 500px;
+        }
         h2{
-            font-size: 22px;
+            font-size: 1.2rem;
             color:#d5cfce;
             font-weight: 900;
             margin-bottom: 20px;
         }
         &-title{
-            font-size: 32px;
+            font-size: 2rem;
             font-weight: 800;
             color: $blue;
         }
         &-text{
-
             margin: 30px 0;
+
+            @media screen and (max-width: 991px){
+                max-width: 420px;
+                font-size: 1rem;
+            }
         }
         .link{
             display: block;
+            @media screen and (max-width: 991px){
+                font-size: 15px;
+            }
         }
         .btn--blue {
             float: left;
@@ -41,12 +52,16 @@
         }
     }
     &__cards{
-        width: calc(50% - 40px);
+        width: 59%;
         display: flex;
         flex-direction: column;
         align-items: center;
         align-items: flex-start;
         //width: calc(520px + 2rem);
+
+        @media screen and (min-width: 1360px){
+            width: 50%;
+        }
 
         &-item{
             display: flex;
@@ -113,7 +128,7 @@
                     margin-top: 40px;
                 }
                 h4{
-                    font-size: 15.3px;
+                    font-size: 14px;
                     font-weight: 700;
                 }
                 p{
@@ -147,25 +162,34 @@
     &__image{
         display: block;
         border-radius: 100px 0 100px 0;
-        width: calc(50% - 20px);
+        // width: calc(50% - 20px);
+        width: 46%;
         max-height: 627px;
         margin: 0 auto;
         object-fit: contain;
     }
     &__description{
-        width: calc(50% - 20px);
-        padding: 0 40px;
+        // width: calc(50% - 20px);
+        width: 60%;
+        padding: 0 0 0 44px;
+        margin-left: 37px;
         h3 {
             font-size: 24px !important;
             font-weight: 600;
             margin-bottom: 25.5px;
         }
         h1 {
-            line-height: 49.6833px;
+            // line-height: 49.6833px;
             letter-spacing: 0.36px;
+            font-size: 2.4rem;
+            font-weight: 800;
+            line-height: 41px;
         }
         p{
             margin: 1.6875rem 0;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 23px;
         }
         .btn--blue {
             float: left;
@@ -282,7 +306,8 @@
     padding-right: 40px;
     &__text{
         color: $blue;
-        font-size: 16px;
+        font-size: 0.9rem;
+        line-height: 20px;
         font-weight: 700;
         height: 40px;
     }
@@ -305,14 +330,14 @@
         flex: 0 0 400px;
     }
     h2 {
-        font-size: 22px;
+        font-size: 1.2rem;
         color:#d5cfce;
         font-weight: 900;
         margin-bottom: 20px;
     }
     &__title{
         color: $blue;
-        font-size: 36px;
+        font-size: 2rem;
         font-weight: 800;
         margin: 20px 0;
     }
@@ -327,7 +352,7 @@
             list-style: none;
             border-left: solid 1px rgb(204, 204, 204);
             &-name{
-                font-size: 22px;
+                font-size: 1.25rem;
                 font-weight: 800;
                 color: rgb(204, 204, 204);
                 cursor: pointer;
@@ -353,14 +378,15 @@
                 .solution__navigate-item-info{
                     display: block;
                     color: $gray;
-                    font-size: 16px;
+                    font-size: 0.9rem;
                     font-weight: 500;
                     margin: 10px 20px;
                 }
                 .solution__navigate-item-button{
                     display: inline-block !important;
                     margin: 10px 20px;
-                    font-size: 15px;
+                    font-size: 0.85rem;
+                    line-height: 1.5;
                 }
             }
         }
@@ -419,7 +445,7 @@
         z-index: 1;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 850px;
+        width: 870px;
         margin-left: -150px;
 
         &-item {
@@ -555,29 +581,31 @@
             width: auto;
         }
         h2:not(.roi__description-subtitle) {
-            font-size: 22px;
+            font-size: 18px;
             color:#d5cfce;
             font-weight: 900;
             margin-bottom: 20px;
         }
         &-title{
-            font-size: 36px;
+            font-size: 2rem;
             color: $blue;
             font-weight: 800;
             margin: 20px 0;
+            line-height: 1.15;
         }
         &-subtitle{
-            font-size: 22px;
+            font-size: 19px;
             color: $blue;
             font-weight: 500;
-            margin: 10px 0;
+            margin-top: 1rem;
         }
         &-text{
-            font-size: 18px;
+            font-size: 1rem;
             color: $gray;
             font-weight: 500;
             letter-spacing: .37px;
-            line-height: 27px;
+            line-height: 23px;
+            margin-top: 1.5rem;
         }
     }
 }
@@ -591,14 +619,21 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @media screen and (min-width: 992px){
+            width: 49%;
+        }
+        @media screen and ( min-width: 1360px){
+            width: 55%;
+        }
         h2{
-            font-size: 22px;
+            font-size: 1.2rem;
             color:#d5cfce;
             font-weight: 900;
             margin-bottom: 20px;
         }
         &-title{
-            font-size: 36px;
+            font-size: 2rem;
             font-weight: 800;
             line-height: 41px;
             color: $blue;
@@ -614,16 +649,17 @@
             }
         }
         &-text, p {
-            font-size: 22px;
+            font-size: 1.2rem;
             color: $blue;
             font-weight: 500;
-            line-height: 34px;
+            line-height: 1.5;
             letter-spacing: .36px;
             max-width: 590px;
         }
         .link {
             margin-top: 36px;
             display: block;
+            font-size: 1rem;
         }
     }
     &__image{
@@ -631,6 +667,11 @@
 
         @media screen and ( min-width: 992px){
             margin-top: 65px;
+            width: 45%;
+        }
+
+        @media screen and ( min-width: 1360px){
+            width: 40%;
         }
 
         img{
@@ -642,7 +683,7 @@
 }
 
 
-@media (max-width: 1279px) {
+@media (max-width: 1152px) {
     .carousel{
         .icon-prev,
         .icon-next{
@@ -698,18 +739,18 @@
     .about{
         &__cards{
             &-item{
-                width: 200px;
+                width: 250px;
                 height: 250px;
-                padding: 15px;
+                padding: 1.5rem;
                 &-content {
-                    margin-top: 30px;//cambiado
+                    margin-top: 2.5rem;//cambiado
                 }
             }
         }
     }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 991px) {
     .about,
     .request-demo,
     .carousel,
@@ -729,7 +770,13 @@
             width: 100%;
             order: 1;
             margin-bottom: 40px;
-            padding: 0 20px;
+            padding: 0;
+            max-width: 530px;
+            margin-left: 0;
+
+            p{
+                max-width: 420px;
+            }
         }
     }
 
@@ -775,6 +822,9 @@
         flex-direction: column;
         &__left{
             width: 100%;
+            p{
+                max-width: 420px;
+            }
         }
         &__right{
             align-self: start;
@@ -793,10 +843,10 @@
             justify-content: center;
             align-self: center;
             flex-direction: column;
-            width: 100%;
+            width: 420px;
         }
         &__boxes {
-            margin: 0;
+            margin: 6rem 0 0 0;
             width: 100%;
             order: 2;
             &-item {
@@ -831,7 +881,7 @@
             order: 1;
             width: 100%;
             max-width: 100%;
-            margin-bottom: 20px;
+            margin-bottom: 0;
         }
     }
 
@@ -850,6 +900,7 @@
             width: 100%;
             order: 1;
             margin-bottom: 40px;
+            margin-top: 4rem;
             &-text {
                 img {
                     max-width: 100%;
@@ -876,8 +927,8 @@
                 margin: 40px 0 !important;
                 align-self: initial !important;
                 &:before{
-                    top: -1rem !important;
-                    left: -1rem !important;
+                    top: -2rem !important;
+                    left: -2rem !important;
                 }
             }
         }

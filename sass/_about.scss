@@ -16,13 +16,13 @@
     &__description{
         width: 100%;
         margin-right: 40px;
-        padding: 20px;
+        padding: 0;
         &-title{
             color: $blue;
             font-weight: 800;
-            font-size: 43px;
+            font-size: 2.4rem;
             letter-spacing: .36px;
-            line-height: 49px;
+            line-height: 1.15;
         }
         &-text{
             width: 100%;
@@ -70,7 +70,7 @@
         align-items: center;
         align-items: flex-start;
         //width: calc(520px + 2rem);
-    
+
         &-item{
             display: flex;
             flex-direction: column;
@@ -133,7 +133,7 @@
                     margin-top: 15px;
                     color: $blue;
                     &.white{
-                        color: #fff; 
+                        color: #fff;
                     }
                 }
             }
@@ -151,7 +151,7 @@
         display: block;
     }
     h2 {
-        font-size: 22px;
+        font-size: 1.2rem;
         color:#d5cfce;
         font-weight: 900;
         margin-bottom: 20px;
@@ -161,14 +161,15 @@
         &-title{
             color: $blue;
             font-weight: 800;
-            font-size: 36px;
+            font-size: 2rem;
             letter-spacing: .36px;
             margin: 20px 0;
+            line-height: 1.15;
         }
         &-text{
             width: 100%;
             max-width: 500px;
-            
+
         }
     }
 }
@@ -180,7 +181,7 @@
     &__description{
         width: calc(50% - 40px);
         h2 {
-            font-size: 22px;
+            font-size: 1.2rem;
             color:#d5cfce;
             font-weight: 900;
             margin-bottom: 20px;
@@ -188,9 +189,9 @@
         &-title{
             color: $blue;
             font-weight: 800;
-            font-size: 36px;
+            font-size: 2rem;
             letter-spacing: .36px;
-            line-height: 49px;
+            // line-height: 49px;
         }
         &-text{
             width: 100%;
@@ -213,14 +214,14 @@
     -webkit-box-align: center;
     align-items: center;
     width: 100%;
-    
+
     &__content {
         position: relative;
         display: flex;
         flex-direction: row;
         margin-bottom: 0px;
         h2 {
-            font-size: 22px;
+            font-size: 1.2rem;
             color:#d5cfce;
             font-weight: 900;
             margin-bottom: 20px;
@@ -235,6 +236,10 @@
         flex-wrap: wrap;
         width: 850px;
         margin-left: -150px;
+
+        @media screen and (min-width: 992px){
+            width: 870px;
+        }
 
         &-item {
             position: relative;
@@ -273,12 +278,12 @@
                 }
             }
             &-job{
-                
+
             }
         }
     }
-        
-        
+
+
     &__description {
         position: absolute;
         right: -170px;
@@ -290,7 +295,7 @@
             width: auto;
         }
         &-title{
-            font-size: 36px;
+            font-size: 2rem;
             color: $blue;
             font-weight: 800;
             margin: 20px 0;
@@ -303,7 +308,7 @@
             margin: 10px 0;
         }
         &-text{
-            font-size: 18px;
+            font-size: 1rem;
             color: $gray;
             font-weight: 500;
             letter-spacing: .37px;
@@ -389,7 +394,7 @@
                 margin-bottom: 40px;
             }
         }
-        
+
     }
 }
 
@@ -406,7 +411,7 @@
             }
         }
     }
-    
+
     .company{
         &__img{
             width: calc(50% - 20px);
@@ -415,7 +420,7 @@
             width: calc(50% - 20px);
         }
     }
-    
+
     .culture{
         &__img{
             width: calc(50% - 20px);
@@ -424,7 +429,7 @@
             width: calc(50% - 20px);
         }
     }
-    
+
     .team{
         &__boxes {
             &-item {
@@ -463,13 +468,13 @@
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
     .company {
         gap:8rem;
     }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 991px) {
     .info,
     .leaders,
     .company,
@@ -479,7 +484,7 @@
     .investors {
         padding: 50px 0;
     }
-    
+
     .info {
         flex-direction: column-reverse !important;
         padding: 50px 0;
@@ -498,7 +503,7 @@
             width: 100%;
         }
     }
-    
+
     .leaders{
         flex-direction: column;
         &__description{
@@ -588,7 +593,7 @@
                     line-height: 20px;
                 }
             }
-        }  
+        }
         &__description {
             position: relative;
             top: initial;
@@ -598,7 +603,7 @@
             width: 100%;
             max-width: 100%;
             margin-bottom: 20px;
-        } 
+        }
     }
 
     .partners {
