@@ -89,7 +89,7 @@ a{
 		    width: 12px;
 		    border-radius: 50%;
 		    border: 2px solid #151043;
-			background-color: #151043; 
+			background-color: #151043;
 		    transform: translateY(-50%);
 		}
 	}
@@ -318,6 +318,8 @@ p{
 @media screen and (min-width: 1125px){
 	.container {
 		max-width: 1100px;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
 	}
 }
 @media screen and (min-width: 1360px){

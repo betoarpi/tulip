@@ -659,6 +659,8 @@ p, article ul, article ol, article blockquote {
 @media screen and (min-width: 1125px) {
   .container {
     max-width: 1100px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 @media screen and (min-width: 1360px) {
@@ -1312,7 +1314,7 @@ p, article ul, article ol, article blockquote {
   margin-top: 10px;
 }
 .about__cards-item__value {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 900;
   margin: 10px 0;
 }
@@ -1330,10 +1332,20 @@ p, article ul, article ol, article blockquote {
   margin: 0 auto;
   object-fit: contain;
 }
+@media screen and (min-width: 82em) {
+  .request-demo__image {
+    width: 50%;
+  }
+}
 .request-demo__description {
-  width: 60%;
-  padding: 0 0 0 44px;
-  margin-left: 37px;
+  width: 50%;
+  padding: 0 5.3rem 0 3.25rem;
+  margin-left: 2.5rem;
+}
+@media screen and (min-width: 82em) {
+  .request-demo__description {
+    padding-right: 0;
+  }
 }
 .request-demo__description h3 {
   font-size: 24px !important;
@@ -1344,13 +1356,13 @@ p, article ul, article ol, article blockquote {
   letter-spacing: 0.36px;
   font-size: 2.4rem;
   font-weight: 800;
-  line-height: 41px;
+  line-height: 1.15;
 }
 .request-demo__description p, .request-demo__description article ul, article .request-demo__description ul, .request-demo__description article ol, article .request-demo__description ol, .request-demo__description article blockquote, article .request-demo__description blockquote {
   margin: 1.6875rem 0;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 23px;
+  line-height: 1.5;
 }
 .request-demo__description .btn--blue {
   float: left;
@@ -1698,7 +1710,7 @@ p, article ul, article ol, article blockquote {
   background: white;
 }
 .roi__boxes-item-title {
-  font-size: 16px;
+  font-size: 0.9rem;
   color: #151043;
   font-weight: 700;
   margin-top: 10px;
@@ -1707,10 +1719,10 @@ p, article ul, article ol, article blockquote {
   color: #fff;
 }
 .roi__boxes-item-value {
-  font-size: 36px;
+  font-size: 2rem;
   color: #151043;
   font-weight: 900;
-  margin: 10px 0;
+  margin: 0.75rem 0;
 }
 .roi__boxes-item-value.white {
   color: #fff;
@@ -2925,12 +2937,12 @@ p, article ul, article ol, article blockquote {
   margin-top: 40px;
 }
 .overview__cards-item-content h4 {
-  font-size: 15.3px;
+  font-size: 0.85rem;
   font-weight: 700;
   margin-bottom: 0;
 }
 .overview__cards-item-content .value {
-  font-size: 30px;
+  font-size: 2rem;
   color: #151043;
   font-weight: 900;
   margin: 4.5px 0 10px 0;
@@ -3179,7 +3191,7 @@ p, article ul, article ol, article blockquote {
 }
 .business-value__description ul li {
   list-style: inherit;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   color: #747489;
   line-height: 24px;
@@ -3407,6 +3419,11 @@ p, article ul, article ol, article blockquote {
   width: 900px;
   margin-left: -150px;
 }
+@media screen and (min-width: 82em) {
+  .offices__boxes {
+    width: 920px;
+  }
+}
 .offices__boxes-item {
   position: relative;
   width: 280px;
@@ -3543,7 +3560,7 @@ p, article ul, article ol, article blockquote {
   padding: 80px 0;
 }
 .form__content {
-  margin: 40px;
+  margin: 40px 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

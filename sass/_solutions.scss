@@ -166,12 +166,12 @@
             &-content {
                 margin-top: 40px;
                 h4{
-                    font-size: 15.3px;
+                    font-size: 0.85rem;
                     font-weight: 700;
                     margin-bottom: 0;
                 }
                 .value{
-                    font-size: 30px;
+                    font-size: 2rem;
                     color: #151043;
                     font-weight: 900;
                     margin: 4.5px 0 10px 0;
@@ -421,7 +421,7 @@
             padding-left: 20px;
             li{
                 list-style: inherit;
-                font-size: 16px;
+                font-size: 1rem;
                 font-weight: 500;
                 color: $gray;
                 line-height: 24px;
