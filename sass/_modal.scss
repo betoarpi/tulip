@@ -9,15 +9,16 @@
   z-index: -300;
 
   &__container{
-     position: fixed;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
     width: 280px;
+    max-height: 90vh;
 
     @media screen and (min-width: 768px){
-        width: 420px;
+        width: 460px;
     }
 
     .hubspot-form{
@@ -73,7 +74,7 @@
 
   &.active {
     opacity: 1;
-    z-index: 1000;
+    z-index: 10000;
     .form {
       top:0;
     }
@@ -85,11 +86,20 @@
     transition: all 0.4s ease-in-out;
     transition-delay: 0.3s;
     top:-2000px;
+    max-height: 90vh;
+    overflow: hidden;
+    padding: 0;
+    align-items: initial;
     &__content{
       border-radius: 1.375rem 1.375rem 7.5rem 1.375rem;
-    //   padding-top: 4rem;
       position: relative;
-      padding: 15px;
+      padding: 30px;
+      display: block;
+
+      #form-container {
+        max-height: 100%;
+        overflow-y: scroll;
+      }
 
       @media screen and (min-width: 768px){
           padding: 40px;
