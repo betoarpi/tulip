@@ -200,7 +200,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    gap: 45px;
+    row-gap: 45px;
     &::before {
         content: '';
         background-color: #f6f5f5;
@@ -231,7 +231,7 @@
         }
     }
     &__image{
-        width: 50%;
+        width: 55%;
         position: relative;
         img{
             display: block;

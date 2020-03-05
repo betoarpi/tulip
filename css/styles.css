@@ -2932,7 +2932,7 @@ p, article ul, article ol, article blockquote {
   justify-content: center;
   align-items: center;
   position: relative;
-  gap: 45px;
+  row-gap: 45px;
 }
 .features::before {
   content: "";
@@ -2964,7 +2964,7 @@ p, article ul, article ol, article blockquote {
   }
 }
 .features__image {
-  width: 50%;
+  width: 55%;
   position: relative;
 }
 .features__image img {
