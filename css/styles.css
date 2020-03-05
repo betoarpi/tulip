@@ -2714,12 +2714,12 @@ p, article ul, article ol, article blockquote {
 }
 @media screen and (min-width: 992px) {
   .logos__content-item {
-    margin-right: 120px;
+    margin-right: 6.5rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .logos__content-item {
-    margin-right: 120px;
+    margin-right: 6.5rem;
   }
 }
 .logos__content-item img {
