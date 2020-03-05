@@ -1827,12 +1827,12 @@ p, article ul, article ol, article blockquote {
 @media screen and (min-width: 992px) {
   .clients__image {
     margin-top: 65px;
-    width: 45%;
+    width: 38%;
   }
 }
 @media screen and (min-width: 1360px) {
   .clients__image {
-    width: 40%;
+    width: 36.5%;
   }
 }
 .clients__image img {
