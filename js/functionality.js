@@ -85,3 +85,18 @@ btnMenu.addEventListener("click", function () {
 // btnCloseMenu.addEventListener("click", function () {
 //   menu.style.display = "none";
 // });
+jQuery(document).ready(function($){
+    $(window).load(function(){
+        $(".hs-form-radio input").on("click", function(){
+
+            $(".hs-form-radio").removeClass("checked");
+
+            if ($(this).is(':checked'))
+            {
+              $(this).parent().parent().addClass("checked");
+            }
+
+        });
+    });
+
+});
