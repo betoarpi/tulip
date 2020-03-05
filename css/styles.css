@@ -921,7 +921,7 @@ p, article ul, article ol, article blockquote {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
