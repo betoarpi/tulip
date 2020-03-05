@@ -1565,7 +1565,15 @@ p, article ul, article ol, article blockquote {
   right: -200px;
   transform: translateY(-50%);
   top: 50%;
-  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .solution__image {
+    width: 110%;
+    max-width: initial !important;
+  }
+  .solution__image.active {
+    right: -15%;
+  }
 }
 .solution__image.active {
   display: block;

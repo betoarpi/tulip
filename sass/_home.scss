@@ -415,7 +415,13 @@
         right: -200px;
         transform: translateY(-50%);
         top:50%;
-        width: 100%;
+        @media screen and (min-width: 992px){
+            width: 110%;
+            max-width: initial !important;
+            &.active {
+                right: -15%;
+            }
+        }
         &.active {
             display: block;
             opacity: 1;
