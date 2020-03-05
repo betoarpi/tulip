@@ -474,7 +474,7 @@ article a, article a:active, article a:focus {
   text-decoration: underline;
 }
 article a:visited, article a:active:visited, article a:focus:visited {
-  color: #7f74de;
+  color: #151043;
 }
 article a:hover, article a:active:hover, article a:focus:hover {
   color: #f54862;
@@ -643,6 +643,11 @@ p, article ul, article ol, article blockquote {
     max-width: 992px;
   }
 }
+@media screen and (min-width: 1125px) {
+  .container {
+    max-width: 1100px;
+  }
+}
 @media screen and (min-width: 1360px) {
   .container {
     max-width: 1260px;
@@ -707,7 +712,7 @@ p, article ul, article ol, article blockquote {
   color: #f54862;
 }
 .link:hover {
-  color: #5d5886;
+  color: #151043;
 }
 .link i {
   margin-left: 5px;
