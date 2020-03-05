@@ -4232,10 +4232,11 @@ p, article ul, article ol, article blockquote {
   transform: translate(-50%, -50%);
   z-index: 9999;
   width: 280px;
+  max-height: 90vh;
 }
 @media screen and (min-width: 768px) {
   .modal__container {
-    width: 420px;
+    width: 460px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -4279,7 +4280,7 @@ p, article ul, article ol, article blockquote {
 }
 .modal.active {
   opacity: 1;
-  z-index: 1000;
+  z-index: 10000;
 }
 .modal.active .form {
   top: 0;
@@ -4289,11 +4290,20 @@ p, article ul, article ol, article blockquote {
   transition: all 0.4s ease-in-out;
   transition-delay: 0.3s;
   top: -2000px;
+  max-height: 90vh;
+  overflow: hidden;
+  padding: 0;
+  align-items: initial;
 }
 .modal .form__content {
   border-radius: 1.375rem 1.375rem 7.5rem 1.375rem;
   position: relative;
-  padding: 15px;
+  padding: 30px;
+  display: block;
+}
+.modal .form__content #form-container {
+  max-height: 100%;
+  overflow-y: scroll;
 }
 @media screen and (min-width: 768px) {
   .modal .form__content {
