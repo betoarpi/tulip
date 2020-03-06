@@ -859,7 +859,7 @@
             justify-content: center;
             align-self: center;
             flex-direction: column;
-            width: 420px;
+            max-width: 420px;
         }
         &__boxes {
             margin: 6rem 0 0 0;

@@ -1996,7 +1996,7 @@ p, article ul, article ol, article blockquote {
     justify-content: center;
     align-self: center;
     flex-direction: column;
-    width: 420px;
+    max-width: 420px;
   }
   .roi__boxes {
     margin: 6rem 0 0 0;
