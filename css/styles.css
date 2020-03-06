@@ -94,7 +94,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -359,7 +360,8 @@ html, body {
   font-family: "Nunito Sans", sans-serif;
   text-rendering: optimizelegibility;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+          text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
 }
 @media screen and (min-width: 1360px) {
@@ -543,6 +545,7 @@ article .btn--blue:visited {
 article .btn--blue:last-child {
   display: block;
   margin: 0 auto;
+  width: -webkit-max-content;
   width: max-content;
   font-size: 0.85rem;
   font-weight: 800;
@@ -1232,7 +1235,6 @@ p, article ul, article ol, article blockquote {
 .about__cards-item {
   display: flex;
   flex-direction: column;
-  -webkit-box-pack: center;
   justify-content: center;
   position: relative;
   width: 250px;
@@ -1609,7 +1611,6 @@ p, article ul, article ol, article blockquote {
 }
 .roi__boxes {
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
   z-index: 1;
   flex-direction: row;
@@ -1974,6 +1975,7 @@ p, article ul, article ol, article blockquote {
 
   .solution {
     flex-direction: column;
+    overflow: hidden;
   }
   .solution__left {
     width: 100%;
@@ -1986,6 +1988,7 @@ p, article ul, article ol, article blockquote {
     min-height: initial;
     width: 320px;
     flex: 0 0 400px;
+    margin-left: 0;
   }
   .solution__right .pleca {
     display: none;
@@ -1997,6 +2000,7 @@ p, article ul, article ol, article blockquote {
     align-self: center;
     flex-direction: column;
     width: 420px;
+    max-width: 100%;
   }
   .roi__boxes {
     margin: 6rem 0 0 0;
@@ -2160,7 +2164,6 @@ p, article ul, article ol, article blockquote {
 .leaders__cards-item {
   display: flex;
   flex-direction: column;
-  -webkit-box-pack: center;
   justify-content: center;
   position: relative;
   width: 250px;
@@ -2291,7 +2294,6 @@ p, article ul, article ol, article blockquote {
   position: relative;
   display: flex;
   flex-direction: column-reverse;
-  -webkit-box-align: center;
   align-items: center;
   width: 100%;
 }
@@ -2309,7 +2311,6 @@ p, article ul, article ol, article blockquote {
 }
 .team__boxes {
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
   z-index: 1;
   flex-direction: row;
@@ -2872,7 +2873,6 @@ p, article ul, article ol, article blockquote {
 .overview__cards-item {
   display: flex;
   flex-direction: column;
-  -webkit-box-pack: center;
   justify-content: center;
   position: relative;
   width: 288px;
@@ -3398,7 +3398,6 @@ p, article ul, article ol, article blockquote {
   position: relative;
   display: flex;
   flex-direction: column-reverse;
-  -webkit-box-align: center;
   align-items: center;
   width: 100%;
   padding: 80px 0 300px;
@@ -3411,7 +3410,6 @@ p, article ul, article ol, article blockquote {
 }
 .offices__boxes {
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
   z-index: 1;
   flex-direction: row;
@@ -4040,6 +4038,7 @@ p, article ul, article ol, article blockquote {
   display: grid;
   gap: 1rem;
   position: relative;
+  grid-template-rows: 240px -webkit-max-content 1fr -webkit-max-content;
   grid-template-rows: 240px max-content 1fr max-content;
 }
 .post-item__thumbnail {
@@ -4494,5 +4493,3 @@ p, article ul, article ol, article blockquote {
 .hamburger--slider.is-active .hamburger-inner::after {
   transform: translate3d(0, -22px, 0) rotate(-90deg);
 }
-
-/*# sourceMappingURL=styles.css.map */

@@ -77,13 +77,14 @@ get_header();
 
                 <article class='post-item'>
                     <figure class="post-item__thumbnail">
+                        <a href="<?php echo get_permalink(); ?>">
                         <?php
                             if( has_post_thumbnail() ):
                                 echo get_the_post_thumbnail(get_the_ID(), "resources-image");
-                            else:
-                                echo "<img src='https://via.placeholder.com/360x240' />";
-                            endif;
-                        ?>
+                            else: ?>
+                            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/placeholder-img.png" />
+                            <?php endif; ?>
+                        </a>
                     </figure>
                     <h4 class="post-item__title"><?php the_title(); ?></h4>
                     <div class="post-item__excerpt">
@@ -108,7 +109,6 @@ get_header();
         ?>
 
     </section>
-
 
 </main>
 

@@ -56,3 +56,14 @@
         }
     }
 }
+
+.wp-pagenavi {
+    display: grid;
+    grid-column: 1 / span 3;
+    grid-template-columns: repeat(9, max-content);
+    gap: 1rem;
+    justify-content: center;
+    font-weight: 700;
+    margin: 50px 0 0;
+    font-size: 1.15rem;
+}

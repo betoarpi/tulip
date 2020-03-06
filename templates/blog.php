@@ -67,7 +67,8 @@ get_header();
         $args_post = array(
             'post_type' => 'post',
             'order'    => 'DESC',
-            'showposts' => 6
+            'showposts' => 12,
+            'paged' => $paged,
         );
 
         $posts = new WP_Query($args_post);
@@ -78,7 +79,12 @@ get_header();
                 <article class='post-item'>
                     <figure class="post-item__thumbnail">
                         <a href="<?php echo get_permalink(); ?>">
-                            <?php echo get_the_post_thumbnail(get_the_ID(), "resources-image"); ?>
+                        <?php
+                            if( has_post_thumbnail() ):
+                                echo get_the_post_thumbnail(get_the_ID(), "resources-image");
+                            else: ?>
+                            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/placeholder-img.png" />
+                            <?php endif; ?>
                         </a>
                     </figure>
                     <h4 class="post-item__title"><?php the_title(); ?></h4>
@@ -90,8 +96,9 @@ get_header();
 
 
             <?php
-            endwhile;
-            wp_reset_postdata();
+            endwhile; ?>
+
+            <? wp_reset_postdata();
             wp_reset_query();
             ?>
 
@@ -102,9 +109,8 @@ get_header();
 
         <?php endif;
         ?>
-
     </section>
-
+    <?php wp_pagenavi( array( 'query' => $posts )); ?>
 
 </main>
 
