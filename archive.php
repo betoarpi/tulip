@@ -21,7 +21,8 @@ get_header();
     $args_featured = array(
         'post_type' =>  $post_type,
         'order'    => 'ASC',
-        'showposts' => 1
+        'showposts' => 1,
+        'category_name' => 'featured'
     );
 
     $featured = new WP_Query($args_featured);
@@ -50,8 +51,6 @@ get_header();
         wp_reset_query();
 
     else : ?>
-
-        <p>Nothing Here.</p>
 
     <?php endif; ?>
 

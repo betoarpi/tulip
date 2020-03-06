@@ -50,6 +50,12 @@
       }
     }
 
+    @media (max-width: 991px) {
+      &__image {
+        height: auto;
+      }
+    }
+
     @media (max-width: 767px) {
       flex-direction: column;
       &__image, &__description {
@@ -104,6 +110,7 @@
   }
 
   .resources__grid {
+    margin-top: 100px;
     &__title {
       text-align: left;
     }

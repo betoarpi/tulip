@@ -1378,7 +1378,7 @@ p, article ul, article ol, article blockquote {
 .carousel .icon-prev {
   color: #f54862;
   position: absolute;
-  top: 332px;
+  top: 312px;
   right: 90px;
   font-size: 25px;
   left: initial;
@@ -1390,7 +1390,7 @@ p, article ul, article ol, article blockquote {
 .carousel .icon-next {
   color: #f54862;
   position: absolute;
-  top: 332px;
+  top: 312px;
   right: 43px;
   font-size: 25px;
   left: initial;
@@ -3929,6 +3929,9 @@ p, article ul, article ol, article blockquote {
 .resources__menu ul li a {
   color: white;
 }
+.resources__menu ul li.current-menu-item a {
+  color: #f54862 !important;
+}
 .resources__grid {
   display: grid;
   gap: 3.125rem;
@@ -4015,10 +4018,11 @@ p, article ul, article ol, article blockquote {
   text-transform: uppercase;
 }
 .featured__description-title {
-  font-size: 2.6875rem;
+  letter-spacing: 0.36px;
+  font-size: 2.4rem;
   font-weight: 800;
+  line-height: 1.15;
   color: #151043;
-  margin-bottom: 24px;
 }
 .featured__description-btn {
   display: inline-block;
@@ -4046,6 +4050,8 @@ p, article ul, article ol, article blockquote {
 .post-item__thumbnail img {
   max-width: 100%;
   height: auto;
+  border-radius: 70px 0 !important;
+  margin-bottom: 1rem;
 }
 .post-item__title {
   font-weight: 600;
@@ -4115,6 +4121,11 @@ p, article ul, article ol, article blockquote {
   color: #151043;
   margin-bottom: 24px;
 }
+@media (max-width: 991px) {
+  .post__hero__image {
+    height: auto;
+  }
+}
 @media (max-width: 767px) {
   .post__hero {
     flex-direction: column;
@@ -4166,6 +4177,9 @@ p, article ul, article ol, article blockquote {
     flex: 0 0 100%;
     margin-bottom: 1rem;
   }
+}
+.post .resources__grid {
+  margin-top: 100px;
 }
 .post .resources__grid__title {
   text-align: left;
