@@ -12,7 +12,7 @@ get_header();
 
     <?php
     $args_featured = array(
-        'post_type' => array('post', 'webinars', 'whitepapers'),
+        'post_type' => array( 'post', 'webinars', 'whitepapers', 'brochures' ),
         'order'    => 'DESC',
         'showposts' => 1,
         'category_name' => 'featured'

@@ -70,3 +70,55 @@ function get_excerpt($limit, $source = null){
     // $excerpt = $excerpt.'... <a href="'.get_permalink($post->ID).'">more</a>';
     return $excerpt;
 }
+
+/**
+ * Post Type Brochures
+ */
+function cptui_register_my_cpts_brochures() {
+
+	/**
+	 * Post Type: Brochures.
+	 */
+
+	$labels = [
+		"name" => __( "Brochures", "Tulip" ),
+		"singular_name" => __( "Brochure", "Tulip" ),
+		"menu_name" => __( "Brochures", "Tulip" ),
+		"all_items" => __( "All Brochures", "Tulip" ),
+		"add_new" => __( "Add Brochure", "Tulip" ),
+		"add_new_item" => __( "Add New Brochure", "Tulip" ),
+		"edit_item" => __( "Edit Brochure", "Tulip" ),
+		"new_item" => __( "New Brochure", "Tulip" ),
+		"view_item" => __( "View Brochure", "Tulip" ),
+		"view_items" => __( "View Brochures", "Tulip" ),
+		"not_found" => __( "Brochure not found", "Tulip" ),
+	];
+
+	$args = [
+		"label" => __( "Brochures", "Tulip" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"has_archive" => "brochures",
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => [ "slug" => "brochures", "with_front" => true ],
+		"query_var" => true,
+		"supports" => [ "title", "editor", "thumbnail", "revisions" ],
+	];
+
+	register_post_type( "brochures", $args );
+}
+
+add_action( 'init', 'cptui_register_my_cpts_brochures' );
+
